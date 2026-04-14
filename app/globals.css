@@ -1,0 +1,277 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* 1% Circle Brand Colors */
+:root {
+  /* Brand Colors */
+  --copper-light: #FFC387;
+  --copper-dark: #C9944A;
+  --brand-red: #960808;
+  
+  /* Copper - use dark in light mode for legibility */
+  --copper: #C9944A;
+  
+  /* Light Mode */
+  --background: #FFFFFF;
+  --foreground: #000000;
+  --card: #FFFFFF;
+  --card-foreground: #000000;
+  --popover: #FFFFFF;
+  --popover-foreground: #000000;
+  --primary: #960808;
+  --primary-foreground: #FFFFFF;
+  --secondary: #F5F5F5;
+  --secondary-foreground: #000000;
+  --muted: #F5F5F5;
+  --muted-foreground: #666666;
+  --accent: #FFC387;
+  --accent-foreground: #000000;
+  --destructive: #960808;
+  --destructive-foreground: #FFFFFF;
+  --border: #E0E0E0;
+  --input: #F5F5F5;
+  --ring: #FFC387;
+  --radius: 0.75rem;
+  
+  /* Custom tokens */
+  --copper: #FFC387;
+  --surface: #FFFFFF;
+  --surface-secondary: #F5F5F5;
+  --text-primary: #000000;
+  --text-secondary: #333333;
+  --text-muted: #666666;
+}
+
+.dark {
+  /* Dark Mode - Default for 1% Circle */
+  --background: #000000;
+  --foreground: #FFFFFF;
+  --card: #0A0A0A;
+  --card-foreground: #FFFFFF;
+  --popover: #0A0A0A;
+  --popover-foreground: #FFFFFF;
+  --primary: #960808;
+  --primary-foreground: #FFFFFF;
+  --secondary: #1A1A1A;
+  --secondary-foreground: #FFFFFF;
+  --muted: #1A1A1A;
+  --muted-foreground: #999999;
+  --accent: #FFC387;
+  --accent-foreground: #000000;
+  --destructive: #960808;
+  --destructive-foreground: #FFFFFF;
+  --border: rgba(255, 195, 135, 0.15);
+  --input: #111111;
+  --ring: #FFC387;
+  
+  /* Custom tokens */
+  --copper: #FFC387;
+  --surface: #0A0A0A;
+  --surface-secondary: #111111;
+  --text-primary: #FFFFFF;
+  --text-secondary: #CCCCCC;
+  --text-muted: #999999;
+}
+
+@theme inline {
+  --font-sans: 'Sora', sans-serif;
+  --font-serif: 'El Messiri', serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback';
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-copper: var(--copper);
+  --color-copper-l: var(--copper-light);
+  --color-brand-red: var(--brand-red);
+  --color-surface: var(--surface);
+  --color-surface-secondary: var(--surface-secondary);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  
+  /* Smooth theme transitions */
+  html {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: var(--background);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--copper);
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--copper-light);
+  }
+}
+
+@layer utilities {
+  /* Text balance for headings */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Gradient text */
+  .gradient-text {
+    background: linear-gradient(135deg, var(--copper) 0%, #FFD4A8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Shimmer animation for CTAs */
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shimmer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    );
+    animation: shimmer 2s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  /* Parallax container */
+  .parallax-container {
+    perspective: 1px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+  }
+  
+  /* Fade up animation */
+  .fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Copper glow */
+  .copper-glow {
+    box-shadow: 0 0 20px rgba(255, 195, 135, 0.3);
+  }
+  
+  /* Red glow for primary buttons */
+  .red-glow {
+    box-shadow: 0 0 20px rgba(150, 8, 8, 0.4);
+  }
+  
+  /* Card hover effect */
+  .card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(255, 195, 135, 0.15);
+  }
+  
+  /* Glass effect */
+  .glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .dark .glass {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Noise texture overlay */
+  .noise {
+    position: relative;
+  }
+  
+  .noise::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.03;
+    pointer-events: none;
+  }
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: var(--copper);
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
+/* Hide scrollbar for horizontal scroll sections */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
