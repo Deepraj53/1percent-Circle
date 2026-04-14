@@ -32,22 +32,6 @@ export function ServiceGallery({ images }: ServiceGalleryProps) {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1))
   }
 
-  // Determine grid positioning for masonry layout
-  const getGridClass = (index: number) => {
-    if (index === 0) return 'col-span-1 md:col-span-2 row-span-1 md:row-span-2'
-    if (index === 1) return 'col-span-1 md:col-span-1 row-span-1'
-    if (index === 2) return 'col-span-1 md:col-span-1 row-span-1 md:row-span-2'
-    if (index === 3) return 'col-span-1 md:col-span-1 row-span-1'
-    if (index === 4) return 'col-span-1 md:col-span-1 row-span-1'
-    return 'col-span-1 md:col-span-1 row-span-1'
-  }
-
-  const getAspectClass = (index: number) => {
-    if (index === 0) return 'aspect-square md:aspect-auto'
-    if (index === 2) return 'aspect-square md:aspect-auto'
-    return 'aspect-square'
-  }
-
   return (
     <section className="relative py-24 lg:py-32 bg-card">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -67,8 +51,8 @@ export function ServiceGallery({ images }: ServiceGalleryProps) {
           </h2>
         </motion.div>
 
-        {/* Masonry Gallery Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-6 auto-rows-max">
+        {/* Gallery Grid */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {images.map((image, index) => (
             <motion.div
               key={index}
@@ -76,15 +60,15 @@ export function ServiceGallery({ images }: ServiceGalleryProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.5, delay: index * 0.05 }}
-              className={`relative overflow-hidden rounded-xl lg:rounded-2xl cursor-pointer group ${getGridClass(index)} ${getAspectClass(index)}`}
+              className="relative aspect-square overflow-hidden rounded-xl lg:rounded-2xl cursor-pointer group"
               onClick={() => openLightbox(index)}
             >
               <Image
                 src={image}
                 alt={`Gallery image ${index + 1}`}
                 fill
-                className="object-cover transition-transform duration-500 group-hover:scale-[1.05]"
-                sizes="(max-width: 768px) 50vw, 25vw"
+                className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                sizes="(max-width: 768px) 50vw, 33vw"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
             </motion.div>
