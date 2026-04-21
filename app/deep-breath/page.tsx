@@ -114,7 +114,7 @@ The atmosphere itself is curated for healing. Soft lighting, therapeutic aromath
   ],
   crossLinks: [
     {
-      name: 'Deep Power',
+      name: '1% Circle',
       tagline: 'Where strength meets discipline',
       href: '/deep-power',
       eyebrow: 'GYM & RECOVERY',
