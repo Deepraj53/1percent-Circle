@@ -6,14 +6,14 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { MembershipFormSection } from "@/components/home/membership-form-section"
 import { AnimatedCounter } from "@/components/ui/animated-counter"
-import { 
-  Check, 
-  ArrowRight, 
-  Dumbbell, 
-  Utensils, 
-  Sparkles, 
-  Clock, 
-  Users, 
+import {
+  Check,
+  ArrowRight,
+  Dumbbell,
+  Utensils,
+  Sparkles,
+  Clock,
+  Users,
   Shield
 } from "lucide-react"
 
@@ -186,7 +186,7 @@ export default function MembershipPage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section - PulseFit Style */}
-      <section 
+      <section
         className="relative w-full min-h-screen flex flex-col overflow-hidden"
         style={{
           background: "linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--secondary)/0.3) 50%, hsl(var(--background)) 100%)",
@@ -307,7 +307,7 @@ export default function MembershipPage() {
           >
             {/* Program Cards - Duplicated for seamless loop */}
             {[
-              { image: "/images/membership-strength.jpg", category: "1% CIRCLE", title: "Elite Strength Training" },
+              { image: "/images/membership-strength.jpg", category: "1% CIRCLE", title: "Personal One-on-One Training" },
               { image: "/images/membership-cuisine.jpg", category: "LONG LAZY DAY", title: "Gourmet Wellness Cuisine" },
               { image: "/images/membership-spa.jpg", category: "DEEP BREATH", title: "Luxury Spa & Recovery" },
               { image: "/images/membership-events.jpg", category: "MEMBERS ONLY", title: "Exclusive Events" },
@@ -361,7 +361,7 @@ export default function MembershipPage() {
               What Membership Includes
             </h2>
             <p className="text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Every membership grants access to our complete wellness ecosystem, 
+              Every membership grants access to our complete wellness ecosystem,
               designed to transform every aspect of your well-being.
             </p>
           </motion.div>
@@ -423,11 +423,10 @@ export default function MembershipPage() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
-                className={`relative rounded-2xl overflow-hidden ${
-                  tier.featured 
-                    ? "bg-[#1a1a1a] dark:bg-[#0a0a0a] text-white border border-copper/30" 
+                className={`relative rounded-2xl overflow-hidden ${tier.featured
+                    ? "bg-[#1a1a1a] dark:bg-[#0a0a0a] text-white border border-copper/30"
                     : "bg-card border border-border"
-                }`}
+                  }`}
               >
                 <div className="p-8">
                   {/* Header */}
@@ -440,15 +439,14 @@ export default function MembershipPage() {
                         {tier.description}
                       </p>
                     </div>
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${
-                      tier.featured 
-                        ? 'bg-copper text-black' 
+                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${tier.featured
+                        ? 'bg-copper text-black'
                         : 'bg-secondary text-muted-foreground'
-                    }`}>
+                      }`}>
                       {tier.featured ? 'RECOMMENDED' : 'MOST POPULAR'}
                     </span>
                   </div>
-                  
+
                   {/* Price */}
                   <div className="mb-6">
                     <div className="flex items-baseline gap-1">
@@ -463,12 +461,11 @@ export default function MembershipPage() {
                   </div>
 
                   {/* CTA Button */}
-                  <Button 
-                    className={`w-full mb-4 ${
-                      tier.featured 
-                        ? 'bg-copper hover:bg-copper-l text-black' 
+                  <Button
+                    className={`w-full mb-4 ${tier.featured
+                        ? 'bg-copper hover:bg-copper-l text-black'
                         : 'bg-background border border-border hover:bg-secondary text-foreground'
-                    }`}
+                      }`}
                     size="lg"
                     onClick={() => {
                       setFormData({ ...formData, tier: tier.name })
@@ -477,7 +474,7 @@ export default function MembershipPage() {
                   >
                     Get Started
                   </Button>
-                  
+
                   <p className={`text-center text-xs mb-8 ${tier.featured ? 'text-white/50' : 'text-muted-foreground'}`}>
                     + INR {tier.initiation} one-time initiation fee
                   </p>
@@ -486,9 +483,8 @@ export default function MembershipPage() {
                   <ul className="space-y-3">
                     {tier.benefits.map((benefit, benefitIndex) => (
                       <li key={benefitIndex} className="flex items-start gap-3">
-                        <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${
-                          tier.featured ? 'bg-copper/20' : 'bg-copper/20'
-                        }`}>
+                        <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${tier.featured ? 'bg-copper/20' : 'bg-copper/20'
+                          }`}>
                           <Check className={`w-3 h-3 ${tier.featured ? 'text-copper-l' : 'text-copper'}`} />
                         </div>
                         <span className={`text-sm ${tier.featured ? 'text-white/80' : 'text-foreground'}`}>
@@ -517,8 +513,8 @@ export default function MembershipPage() {
               <div className="flex-1">
                 <h4 className="font-serif text-xl md:text-2xl font-normal text-foreground mb-3">Notice of Limited Availability</h4>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Memberships are made available on a first-come, first-serve basis. Your application is being given 
-                  first access to this membership; however, 1% Circle makes no guarantee that this will still be 
+                  Memberships are made available on a first-come, first-serve basis. Your application is being given
+                  first access to this membership; however, 1% Circle makes no guarantee that this will still be
                   available after today. Only <span className="text-copper font-medium">47 founding memberships</span> remain.
                 </p>
               </div>
@@ -558,7 +554,7 @@ export default function MembershipPage() {
                 <div className="text-6xl font-serif text-copper/30 mb-4">{step.step}</div>
                 <h3 className="text-xl font-serif text-foreground mb-3">{step.title}</h3>
                 <p className="text-muted-foreground">{step.description}</p>
-                
+
                 {index < applicationSteps.length - 1 && (
                   <div className="hidden lg:block absolute top-8 left-[60%] w-[80%] h-px bg-border" />
                 )}
@@ -604,10 +600,9 @@ export default function MembershipPage() {
                   className="w-full p-6 text-left flex items-center justify-between hover:bg-card/50 transition-colors"
                 >
                   <span className="font-medium text-foreground pr-4">{faq.question}</span>
-                  <ArrowRight 
-                    className={`w-5 h-5 text-copper flex-shrink-0 transition-transform ${
-                      expandedFaq === index ? "rotate-90" : ""
-                    }`}
+                  <ArrowRight
+                    className={`w-5 h-5 text-copper flex-shrink-0 transition-transform ${expandedFaq === index ? "rotate-90" : ""
+                      }`}
                   />
                 </button>
                 {expandedFaq === index && (
