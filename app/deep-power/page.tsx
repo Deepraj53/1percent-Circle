@@ -18,7 +18,7 @@ const deepPowerData = {
     tagline: 'Where strength meets discipline.',
     eyebrow: 'GYM & RECOVERY',
     videoSrc: '/videos/deep-power.mp4',
-    posterSrc: '/Deep Power Hero.png',
+    posterSrc: '/images/deep-power-hero.jpg',
   },
   overview: {
     title: 'Fitness, Redefined',
