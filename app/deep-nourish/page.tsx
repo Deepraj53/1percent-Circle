@@ -3,7 +3,7 @@ import { ServiceHero } from '@/components/services/service-hero'
 import { ServiceOverview } from '@/components/services/service-overview'
 import { ServiceFacilities } from '@/components/services/service-facilities'
 import { ServiceTeam } from '@/components/services/service-team'
-import { ServiceGallery } from '@/components/services/service-gallery'
+import { ServiceGalleryWithVideo } from '@/components/services/service-gallery-with-video'
 import { ServiceCrossLinks } from '@/components/services/service-cross-links'
 import { ServiceCTA } from '@/components/services/service-cta'
 
@@ -104,14 +104,20 @@ Our cafe isn't just a place to eat — it's a gathering space for meaningful con
       imageSrc: '/images/team/pastry-maya.jpg',
     },
   ],
-  gallery: [
-    '/Lazy food Gallery1.png',
-    '/Lazy food Gallery2.png',
-    '/Lazy food Gallery3.png',
-    '/Lazy food Gallery4.png',
-    '/Lazy food Gallery5.png',
-    '/Lazy food Gallery6.png',
-  ],
+  gallery: {
+    video: {
+      src: '/videos/deep-nourish-gallery.mp4',
+      poster: '/images/deep-nourish-video-preview.jpg',
+      alt: 'Long Lazy Day culinary experience',
+      title: 'Culinary Journey',
+    },
+    images: [
+      '/Lazy food Gallery1.png',
+      '/Lazy food Gallery2.png',
+      '/Lazy food Gallery3.png',
+      '/Lazy food Gallery4.png',
+    ],
+  },
   crossLinks: [
     {
       name: 'Deep Power',
@@ -141,7 +147,7 @@ export default function DeepNourishPage() {
       <ServiceOverview {...deepNourishData.overview} />
       <ServiceFacilities {...deepNourishData.facilities} />
       <ServiceTeam members={deepNourishData.team} />
-      <ServiceGallery images={deepNourishData.gallery} />
+      <ServiceGalleryWithVideo {...deepNourishData.gallery} />
       <ServiceCrossLinks services={deepNourishData.crossLinks} />
       <ServiceCTA {...deepNourishData.cta} />
     </main>
