@@ -320,7 +320,7 @@ export default function MembershipPage() {
                 key={index}
                 whileHover={{ scale: 1.05, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className="flex-shrink-0 cursor-pointer relative overflow-hidden rounded-3xl"
+                className="shrink-0 cursor-pointer relative overflow-hidden rounded-3xl"
                 style={{ width: "356px", height: "420px", boxShadow: "0 8px 32px rgba(0, 0, 0, 0.12)" }}
               >
                 <Image
