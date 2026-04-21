@@ -6,21 +6,10 @@ import { motion, AnimatePresence } from 'framer-motion'
 export function LoaderAnimation() {
   const [showLoader, setShowLoader] = useState(true)
 
-  useEffect(() => {
-    // Check if loader has already been shown in this session
-    const loaderShown = sessionStorage.getItem('loaderShown')
-
-    if (loaderShown) {
-      setShowLoader(false)
-      return
-    }
-  }, [])
-
   const handleVideoEnd = () => {
     // Video has completed one full sequence
     setTimeout(() => {
       setShowLoader(false)
-      sessionStorage.setItem('loaderShown', 'true')
     }, 300)
   }
 
