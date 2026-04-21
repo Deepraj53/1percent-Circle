@@ -27,12 +27,7 @@ const deepBreathData = {
 Every treatment is personalized, beginning with a consultation that understands your unique needs. Whether you seek relief from stress, recovery from physical exertion, or simply moments of profound relaxation, our therapists craft experiences that transform both body and mind.
 
 The atmosphere itself is curated for healing. Soft lighting, therapeutic aromatherapy, and temperatures calibrated for comfort create a cocoon of tranquility from the moment you enter. This is not a spa — it's a journey inward.`,
-    features: [
-      { label: '8', description: 'private treatment rooms' },
-      { label: 'Hammam', description: 'authentic Turkish bath' },
-      { label: 'Infrared', description: 'detox sauna' },
-      { label: 'Custom', description: 'treatment protocols' },
-    ],
+    features: [],
     imageSrc: '/Spa and Barner.jpg',
   },
   facilities: {
@@ -119,7 +114,7 @@ The atmosphere itself is curated for healing. Soft lighting, therapeutic aromath
   ],
   crossLinks: [
     {
-      name: 'Deep Power',
+      name: '1% Circle',
       tagline: 'Where strength meets discipline',
       href: '/deep-power',
       eyebrow: 'GYM & RECOVERY',

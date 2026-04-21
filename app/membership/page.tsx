@@ -33,47 +33,24 @@ const staggerContainer = {
 
 const membershipTiers = [
   {
-    name: "Founding Elite",
-    subtitle: "Limited to 50 Members",
-    price: "25,00,000",
+    name: "Red Carpet Membership Privileges",
+    subtitle: "Limited to 100 Members",
+    price: "3,00,000",
     period: "per annum",
     initiation: "5,00,000",
     featured: true,
     description: "The ultimate membership for those who demand absolute exclusivity and priority access.",
     benefits: [
-      "Unlimited access to all 1% Circle facilities",
-      "Unlimited Long Lazy Day dining credits",
-      "Unlimited Deep Breath spa treatments",
+      "1% Circle facility",
+      "One-on-One Personal Training",
+      "Pre Workout Drink",
+      "Chef made Post workout dishes",
       "Personal wellness concierge (dedicated)",
-      "Priority booking for all services",
-      "Complimentary guest passes (12/year)",
-      "Private locker with premium amenities",
-      "Access to members-only events",
-      "Exclusive founder&apos;s circle networking",
-      "24/7 facility access",
-      "Complimentary valet parking",
-      "Annual wellness retreat invitation"
-    ]
-  },
-  {
-    name: "Founding Premier",
-    subtitle: "Limited to 50 Members",
-    price: "15,00,000",
-    period: "per annum",
-    initiation: "3,00,000",
-    featured: false,
-    description: "Premium membership with comprehensive access to all our wellness pillars.",
-    benefits: [
-      "Full access to 1% Circle facilities",
-      "Monthly Long Lazy Day dining credits (50K)",
-      "Monthly Deep Breath spa credits (30K)",
-      "Shared wellness concierge support",
-      "Standard booking window",
-      "Complimentary guest passes (6/year)",
-      "Shared locker facilities",
-      "Access to members-only events",
-      "12/7 facility access (6AM-12AM)",
-      "Complimentary parking"
+      "24 Massage Sessions per annum",
+      "24 Plunge Sessions per annum",
+      "24 Steam Sessions per annum",
+      "50% off on Salon and Spa services",
+      "50% off on the Cafe Menu",
     ]
   }
 ]
@@ -82,7 +59,7 @@ const memberBenefits = [
   {
     icon: Dumbbell,
     title: "1% Circle Access",
-    description: "World-class fitness facilities with Olympic-grade equipment and certified trainers."
+    description: "World-class fitness facilities with Precor equipment and certified trainers."
   },
   {
     icon: Utensils,
@@ -311,7 +288,7 @@ export default function MembershipPage() {
               { image: "/images/membership-cuisine.jpg", category: "LONG LAZY DAY", title: "Gourmet Wellness Cuisine" },
               { image: "/images/membership-spa.jpg", category: "DEEP BREATH", title: "Luxury Spa & Recovery" },
               { image: "/images/membership-events.jpg", category: "MEMBERS ONLY", title: "Exclusive Events" },
-              { image: "/images/membership-strength.jpg", category: "1% CIRCLE", title: "Elite Strength Training" },
+              { image: "/images/membership-strength.jpg", category: "1% CIRCLE", title: "Personal One-on-One Training" },
               { image: "/images/membership-cuisine.jpg", category: "LONG LAZY DAY", title: "Gourmet Wellness Cuisine" },
               { image: "/images/membership-spa.jpg", category: "DEEP BREATH", title: "Luxury Spa & Recovery" },
               { image: "/images/membership-events.jpg", category: "MEMBERS ONLY", title: "Exclusive Events" },
@@ -320,7 +297,7 @@ export default function MembershipPage() {
                 key={index}
                 whileHover={{ scale: 1.05, y: -10 }}
                 transition={{ duration: 0.3 }}
-                className="flex-shrink-0 cursor-pointer relative overflow-hidden rounded-3xl"
+                className="shrink-0 cursor-pointer relative overflow-hidden rounded-3xl"
                 style={{ width: "356px", height: "420px", boxShadow: "0 8px 32px rgba(0, 0, 0, 0.12)" }}
               >
                 <Image
@@ -404,9 +381,6 @@ export default function MembershipPage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <span className="inline-block border border-border py-1.5 px-4 rounded-full text-xs font-medium tracking-wide text-muted-foreground bg-background mb-4">
-              Simple, Honest Pricing
-            </span>
             <h2 className="text-3xl md:text-5xl font-serif font-normal text-foreground mb-4 text-balance">
               Choose Your Membership
             </h2>
@@ -415,87 +389,89 @@ export default function MembershipPage() {
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
-            {membershipTiers.map((tier, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                className={`relative rounded-2xl overflow-hidden ${tier.featured
+          <div className="flex justify-center">
+            <div className="grid lg:grid-cols-1 gap-6 max-w-2xl w-full">
+              {membershipTiers.map((tier, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  className={`relative rounded-2xl overflow-hidden ${tier.featured
                     ? "bg-[#1a1a1a] dark:bg-[#0a0a0a] text-white border border-copper/30"
                     : "bg-card border border-border"
-                  }`}
-              >
-                <div className="p-8">
-                  {/* Header */}
-                  <div className="flex items-start justify-between mb-6">
-                    <div>
-                      <h3 className={`text-xl font-serif font-normal mb-1 ${tier.featured ? 'text-white' : 'text-foreground'}`}>
-                        {tier.name}
-                      </h3>
-                      <p className={`text-sm ${tier.featured ? 'text-white/70' : 'text-muted-foreground'}`}>
-                        {tier.description}
-                      </p>
-                    </div>
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${tier.featured
+                    }`}
+                >
+                  <div className="p-8">
+                    {/* Header */}
+                    <div className="flex items-start justify-between mb-6">
+                      <div>
+                        <h3 className={`text-xl font-serif font-normal mb-1 ${tier.featured ? 'text-white' : 'text-foreground'}`}>
+                          {tier.name}
+                        </h3>
+                        <p className={`text-sm ${tier.featured ? 'text-white/70' : 'text-muted-foreground'}`}>
+                          {tier.description}
+                        </p>
+                      </div>
+                      <span className={`px-3 py-1 rounded-full text-xs font-medium ${tier.featured
                         ? 'bg-copper text-black'
                         : 'bg-secondary text-muted-foreground'
-                      }`}>
-                      {tier.featured ? 'RECOMMENDED' : 'MOST POPULAR'}
-                    </span>
-                  </div>
-
-                  {/* Price */}
-                  <div className="mb-6">
-                    <div className="flex items-baseline gap-1">
-                      <span className={`text-lg ${tier.featured ? 'text-white/60' : 'text-muted-foreground'}`}>INR</span>
-                      <span className={`text-5xl font-serif font-normal ${tier.featured ? 'text-white' : 'text-foreground'}`}>
-                        {tier.price}
+                        }`}>
+                        {tier.featured ? 'RECOMMENDED' : 'MOST POPULAR'}
                       </span>
                     </div>
-                    <p className={`text-sm mt-1 ${tier.featured ? 'text-white/60' : 'text-muted-foreground'}`}>
-                      {tier.period}
-                    </p>
-                  </div>
 
-                  {/* CTA Button */}
-                  <Button
-                    className={`w-full mb-4 ${tier.featured
+                    {/* Price */}
+                    <div className="mb-6">
+                      <div className="flex items-baseline gap-1">
+                        <span className={`text-lg ${tier.featured ? 'text-white/60' : 'text-muted-foreground'}`}>INR</span>
+                        <span className={`text-5xl font-serif font-normal ${tier.featured ? 'text-white' : 'text-foreground'}`}>
+                          {tier.price}
+                        </span>
+                      </div>
+                      <p className={`text-sm mt-1 ${tier.featured ? 'text-white/60' : 'text-muted-foreground'}`}>
+                        {tier.period}
+                      </p>
+                    </div>
+
+                    {/* CTA Button */}
+                    <Button
+                      className={`w-full mb-4 ${tier.featured
                         ? 'bg-copper hover:bg-copper-l text-black'
                         : 'bg-background border border-border hover:bg-secondary text-foreground'
-                      }`}
-                    size="lg"
-                    onClick={() => {
-                      setFormData({ ...formData, tier: tier.name })
-                      document.getElementById("application-form")?.scrollIntoView({ behavior: "smooth" })
-                    }}
-                  >
-                    Get Started
-                  </Button>
+                        }`}
+                      size="lg"
+                      onClick={() => {
+                        setFormData({ ...formData, tier: tier.name })
+                        document.getElementById("application-form")?.scrollIntoView({ behavior: "smooth" })
+                      }}
+                    >
+                      Get Started
+                    </Button>
 
-                  <p className={`text-center text-xs mb-8 ${tier.featured ? 'text-white/50' : 'text-muted-foreground'}`}>
-                    + INR {tier.initiation} one-time initiation fee
-                  </p>
+                    <p className={`text-center text-xs mb-8 ${tier.featured ? 'text-white/50' : 'text-muted-foreground'}`}>
+                      + INR {tier.initiation} one-time initiation fee
+                    </p>
 
-                  {/* Benefits */}
-                  <ul className="space-y-3">
-                    {tier.benefits.map((benefit, benefitIndex) => (
-                      <li key={benefitIndex} className="flex items-start gap-3">
-                        <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${tier.featured ? 'bg-copper/20' : 'bg-copper/20'
-                          }`}>
-                          <Check className={`w-3 h-3 ${tier.featured ? 'text-copper-l' : 'text-copper'}`} />
-                        </div>
-                        <span className={`text-sm ${tier.featured ? 'text-white/80' : 'text-foreground'}`}>
-                          {benefit}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
-            ))}
+                    {/* Benefits */}
+                    <ul className="space-y-3">
+                      {tier.benefits.map((benefit, benefitIndex) => (
+                        <li key={benefitIndex} className="flex items-start gap-3">
+                          <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${tier.featured ? 'bg-copper/20' : 'bg-copper/20'
+                            }`}>
+                            <Check className={`w-3 h-3 ${tier.featured ? 'text-copper-l' : 'text-copper'}`} />
+                          </div>
+                          <span className={`text-sm ${tier.featured ? 'text-white/80' : 'text-foreground'}`}>
+                            {benefit}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
           </div>
 
           {/* Notice */}
@@ -513,9 +489,7 @@ export default function MembershipPage() {
               <div className="flex-1">
                 <h4 className="font-serif text-xl md:text-2xl font-normal text-foreground mb-3">Notice of Limited Availability</h4>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Memberships are made available on a first-come, first-serve basis. Your application is being given
-                  first access to this membership; however, 1% Circle makes no guarantee that this will still be
-                  available after today. Only <span className="text-copper font-medium">47 founding memberships</span> remain.
+                  Memberships are offered on a first-come, first-served basis. Your application will be granted priority access to secure this membership today.
                 </p>
               </div>
             </div>

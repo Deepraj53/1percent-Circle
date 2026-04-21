@@ -293,7 +293,7 @@ export default function ContactPage() {
                 />
                 <div className="absolute inset-0 bg-background/20 flex items-center justify-center">
                   <a 
-                    href="https://maps.google.com/?q=Signature+Heights+Shubh+Enclave+Haraluru+Main+Road+Bengaluru"
+                    href="https://google.com/maps?q=1+Percent+Circle,+40,+signature+heights,+Shubh+enclave,+Haralur+Main+Rd,+Bengaluru,+Karnataka+560102&ftid=0x3bae13f4e2749e41:0xe7183e888e4d5179&entry=gps&shh=CAE&lucs=,94297699,94275415,94284460,94231188,94280568,47071704,94218641,94282134,94286869&g_ep=CAISEjI1LjQ5LjkuODM4ODk5MTgzMBgAIIgnKlEsOTQyOTc2OTksOTQyNzU0MTUsOTQyODQ0NjAsOTQyMzExODgsOTQyODA1NjgsNDcwNzE3MDQsOTQyMTg2NDEsOTQyODIxMzQsOTQyODY4NjlCAklO&skid=79d79fef-e252-4672-a500-2e4ef1e3248a&g_st=ic"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-background/90 backdrop-blur-sm border border-border rounded-lg px-6 py-3 flex items-center gap-2 hover:bg-background transition-colors"

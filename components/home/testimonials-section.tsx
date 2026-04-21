@@ -143,7 +143,7 @@ const TestimonialsColumn = ({
 }
 
 const stats = [
-  { label: 'Elite Members', value: 200, suffix: '+' },
+  { label: 'Elite Members', value: 100, suffix: '+' },
   { label: 'Premium Gym Ranking', value: 1, prefix: '#', suffix: ' in Bangalore' },
   { label: 'Average Rating', value: 4.9, suffix: '', isDecimal: true },
 ]

@@ -61,7 +61,7 @@ export function ServiceHero({
           />
         )}
         {/* Dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/75 to-black/95" />
         {/* Copper tint */}
         <div className="absolute inset-0 bg-gradient-to-tr from-[#FFC387]/5 to-transparent" />
       </div>

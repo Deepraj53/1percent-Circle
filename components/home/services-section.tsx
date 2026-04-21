@@ -14,10 +14,10 @@ const services = [
     eyebrow: 'GYM & RECOVERY',
     tagline: 'Where strength meets discipline.',
     description:
-      'State-of-the-art Olympic-grade equipment, private training zones, and comprehensive recovery facilities.',
+      'State-of-the-art Precor equipment, private training zones, and comprehensive recovery facilities.',
     backDescription:
-      'Experience fitness redefined with 12,000 sq.ft. of premium training space, Olympic-grade equipment, and a 1:3 trainer-to-member ratio. Our recovery zone includes cryotherapy, infrared saunas, and professional sports massage.',
-    features: ['12,000 sq.ft.', 'Olympic-grade Equipment', '1:3 Trainer Ratio'],
+      'Experience fitness redefined with 4000 sq.ft. of premium training space, Precor equipment, and a 1:7 trainer-to-member ratio. Our recovery zone includes cryotherapy, infrared saunas, and professional sports massage.',
+    features: ['4000 sq.ft.', 'Precor Equipment', '1:7 Trainer Ratio'],
     href: '/deep-power',
     image: '/DEEP POWER IMAGE CARD.png',
     logo: '/logos/1percent-circle-logo-white.svg',

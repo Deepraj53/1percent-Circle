@@ -50,8 +50,8 @@ export function AboutSection() {
           {/* Main Image */}
           <div className="relative aspect-[16/10] md:aspect-[2/1] lg:aspect-[2.5/1] overflow-hidden rounded-xl lg:rounded-2xl">
             <Image
-              src="/images/interior-lounge.jpg"
-              alt="1% Circle Interior - Luxury lounge area with ambient lighting"
+              src="/images/about-spa.jpg"
+              alt="1% Circle Deep Breath Spa - Luxurious wellness sanctuary with ambient lighting"
               fill
               className="object-cover"
               sizes="100vw"

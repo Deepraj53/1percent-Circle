@@ -8,6 +8,7 @@ import { WhatsAppButton } from '@/components/layout/whatsapp-button'
 import { ScrollProgress } from '@/components/layout/scroll-progress'
 import { BackToTop } from '@/components/layout/back-to-top'
 import { CookieConsent } from '@/components/layout/cookie-consent'
+import { LoaderAnimation } from '@/components/loader-animation'
 import './globals.css'
 
 const elMessiri = El_Messiri({
@@ -92,6 +93,7 @@ export default function RootLayout({
           forcedTheme="dark"
           disableTransitionOnChange={false}
         >
+          <LoaderAnimation />
           <ScrollProgress />
           <Navbar />
           <div className="min-h-screen">

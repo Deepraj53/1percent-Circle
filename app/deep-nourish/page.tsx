@@ -3,7 +3,7 @@ import { ServiceHero } from '@/components/services/service-hero'
 import { ServiceOverview } from '@/components/services/service-overview'
 import { ServiceFacilities } from '@/components/services/service-facilities'
 import { ServiceTeam } from '@/components/services/service-team'
-import { ServiceGallery } from '@/components/services/service-gallery'
+import { ServiceGalleryWithVideo } from '@/components/services/service-gallery-with-video'
 import { ServiceCrossLinks } from '@/components/services/service-cross-links'
 import { ServiceCTA } from '@/components/services/service-cta'
 
@@ -27,12 +27,7 @@ const deepNourishData = {
 Every ingredient is sourced with intention. We partner with organic farms and sustainable suppliers to ensure that what reaches your plate is as pure as it is flavorful. From power bowls that energize your morning to gourmet dinners that reward your day, each dish is a celebration of thoughtful nutrition.
 
 Our cafe isn't just a place to eat — it's a gathering space for meaningful conversations, post-workout refueling, and moments of quiet indulgence. With private dining options and customized meal plans, Long Lazy Day adapts to your lifestyle.`,
-    features: [
-      { label: '100%', description: 'organic ingredients' },
-      { label: 'In-House', description: 'chef & nutritionist' },
-      { label: 'Custom', description: 'meal plans available' },
-      { label: 'Private', description: 'dining options' },
-    ],
+    features: [],
     imageSrc: '/Lazy food.png',
   },
   facilities: {
@@ -109,14 +104,20 @@ Our cafe isn't just a place to eat — it's a gathering space for meaningful con
       imageSrc: '/images/team/pastry-maya.jpg',
     },
   ],
-  gallery: [
-    '/Lazy food Gallery1.png',
-    '/Lazy food Gallery2.png',
-    '/Lazy food Gallery3.png',
-    '/Lazy food Gallery4.png',
-    '/Lazy food Gallery5.png',
-    '/Lazy food Gallery6.png',
-  ],
+  gallery: {
+    video: {
+      src: '/videos/deep-nourish-gallery.mp4',
+      poster: '/images/deep-nourish-video-preview.jpg',
+      alt: 'Long Lazy Day culinary experience',
+      title: 'Culinary Journey',
+    },
+    images: [
+      '/Lazy food Gallery1.png',
+      '/Lazy food Gallery2.png',
+      '/Lazy food Gallery3.png',
+      '/Lazy food Gallery4.png',
+    ],
+  },
   crossLinks: [
     {
       name: 'Deep Power',
@@ -146,7 +147,7 @@ export default function DeepNourishPage() {
       <ServiceOverview {...deepNourishData.overview} />
       <ServiceFacilities {...deepNourishData.facilities} />
       <ServiceTeam members={deepNourishData.team} />
-      <ServiceGallery images={deepNourishData.gallery} />
+      <ServiceGalleryWithVideo {...deepNourishData.gallery} />
       <ServiceCrossLinks services={deepNourishData.crossLinks} />
       <ServiceCTA {...deepNourishData.cta} />
     </main>
