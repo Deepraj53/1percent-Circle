@@ -54,27 +54,6 @@ const membershipTiers = [
       "Complimentary valet parking",
       "Annual wellness retreat invitation"
     ]
-  },
-  {
-    name: "Founding Premier",
-    subtitle: "Limited to 50 Members",
-    price: "15,00,000",
-    period: "per annum",
-    initiation: "3,00,000",
-    featured: false,
-    description: "Premium membership with comprehensive access to all our wellness pillars.",
-    benefits: [
-      "Full access to 1% Circle facilities",
-      "Monthly Long Lazy Day dining credits (50K)",
-      "Monthly Deep Breath spa credits (30K)",
-      "Shared wellness concierge support",
-      "Standard booking window",
-      "Complimentary guest passes (6/year)",
-      "Shared locker facilities",
-      "Access to members-only events",
-      "12/7 facility access (6AM-12AM)",
-      "Complimentary parking"
-    ]
   }
 ]
 
