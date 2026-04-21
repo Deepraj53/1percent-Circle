@@ -28,10 +28,10 @@ Every ingredient is sourced with intention. We partner with organic farms and su
 
 Our cafe isn't just a place to eat — it's a gathering space for meaningful conversations, post-workout refueling, and moments of quiet indulgence. With private dining options and customized meal plans, Long Lazy Day adapts to your lifestyle.`,
     features: [
-      { label: '100%', description: 'organic ingredients' },
-      { label: 'In-House', description: 'chef & nutritionist' },
-      { label: 'Custom', description: 'meal plans available' },
-      { label: 'Private', description: 'dining options' },
+      { label: '', description: 'organic ingredients' },
+      { label: '', description: 'chef & nutritionist' },
+      { label: '', description: 'meal plans available' },
+      { label: '', description: 'dining options' },
     ],
     imageSrc: '/Lazy food.png',
   },
