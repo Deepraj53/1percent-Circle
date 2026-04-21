@@ -27,12 +27,7 @@ const deepNourishData = {
 Every ingredient is sourced with intention. We partner with organic farms and sustainable suppliers to ensure that what reaches your plate is as pure as it is flavorful. From power bowls that energize your morning to gourmet dinners that reward your day, each dish is a celebration of thoughtful nutrition.
 
 Our cafe isn't just a place to eat — it's a gathering space for meaningful conversations, post-workout refueling, and moments of quiet indulgence. With private dining options and customized meal plans, Long Lazy Day adapts to your lifestyle.`,
-    features: [
-      { label: '', description: 'organic ingredients' },
-      { label: '', description: 'chef & nutritionist' },
-      { label: '', description: 'meal plans available' },
-      { label: '', description: 'dining options' },
-    ],
+    features: [],
     imageSrc: '/Lazy food.png',
   },
   facilities: {
