@@ -9,7 +9,7 @@ import { ServiceCTA } from '@/components/services/service-cta'
 
 export const metadata: Metadata = {
   title: '1% Circle — Gym & Recovery | 1% Circle',
-  description: 'State-of-the-art Olympic-grade fitness equipment, private training zones, and comprehensive recovery facilities. Experience fitness redefined at 1% Circle.',
+  description: 'State-of-the-art Precor fitness equipment, private training zones, and comprehensive recovery facilities. Experience fitness redefined at 1% Circle.',
 }
 
 const deepPowerData = {
@@ -22,7 +22,7 @@ const deepPowerData = {
   },
   overview: {
     title: 'Fitness, Redefined',
-    description: `1% Circle represents the pinnacle of premium fitness. Our 4000 sq.ft. facility houses Olympic-grade equipment, private training zones, and state-of-the-art recovery rooms — all designed for those who demand excellence in every aspect of their fitness journey.
+    description: `1% Circle represents the pinnacle of premium fitness. Our 4000 sq.ft. facility houses Precor equipment, private training zones, and state-of-the-art recovery rooms — all designed for those who demand excellence in every aspect of their fitness journey.
 
 Every detail has been curated with intention. From the acoustics that create focus to the lighting that energizes, 1% Circle is not just a gym — it's a sanctuary for transformation. Our 1:7 trainer-to-member ratio ensures personalized attention that's simply impossible at conventional fitness centers.
 
@@ -30,7 +30,7 @@ Whether you're training for peak performance or seeking a holistic approach to s
     features: [
       { label: '4000 sq.ft.', description: 'of premium training space' },
       { label: '1:7 Ratio', description: 'trainer to member' },
-      { label: 'Olympic-Grade', description: 'equipment & facilities' },
+      { label: 'Precor Equipment', description: 'equipment & facilities' },
       { label: '24/7 Access', description: 'for platinum members' },
     ],
     imageSrc: '/og-image.jpg',
@@ -39,7 +39,7 @@ Whether you're training for peak performance or seeking a holistic approach to s
     title: 'World-Class Facilities',
     categories: [
       {
-        name: 'Equipment',
+        name: 'Precor Equipment',
         items: [
           'Technogym Selection Line',
           'Rogue Olympic Platforms',

@@ -59,7 +59,7 @@ const memberBenefits = [
   {
     icon: Dumbbell,
     title: "1% Circle Access",
-    description: "World-class fitness facilities with Olympic-grade equipment and certified trainers."
+    description: "World-class fitness facilities with Precor equipment and certified trainers."
   },
   {
     icon: Utensils,
