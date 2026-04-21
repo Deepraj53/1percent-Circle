@@ -41,18 +41,16 @@ const membershipTiers = [
     featured: true,
     description: "The ultimate membership for those who demand absolute exclusivity and priority access.",
     benefits: [
-      "Unlimited access to all 1% Circle facilities",
-      "Unlimited Long Lazy Day dining credits",
-      "Unlimited Deep Breath spa treatments",
+      "1% Circle facility",
+      "One-on-One Personal Training",
+      "Pre Workout Drink",
+      "Chef made Post workout dishes",
       "Personal wellness concierge (dedicated)",
-      "Priority booking for all services",
-      "Complimentary guest passes (12/year)",
-      "Private locker with premium amenities",
-      "Access to members-only events",
-      "Exclusive founder&apos;s circle networking",
-      "24/7 facility access",
-      "Complimentary valet parking",
-      "Annual wellness retreat invitation"
+      "24 Massage Sessions per annum",
+      "24 Plunge Sessions per annum",
+      "24 Steam Sessions per annum",
+      "50% off on Salon and Spa services",
+      "50% off on the Cafe Menu",
     ]
   }
 ]
@@ -393,86 +391,86 @@ export default function MembershipPage() {
 
           <div className="flex justify-center">
             <div className="grid lg:grid-cols-1 gap-6 max-w-2xl w-full">
-            {membershipTiers.map((tier, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8, delay: index * 0.2 }}
-                className={`relative rounded-2xl overflow-hidden ${tier.featured
-                  ? "bg-[#1a1a1a] dark:bg-[#0a0a0a] text-white border border-copper/30"
-                  : "bg-card border border-border"
-                  }`}
-              >
-                <div className="p-8">
-                  {/* Header */}
-                  <div className="flex items-start justify-between mb-6">
-                    <div>
-                      <h3 className={`text-xl font-serif font-normal mb-1 ${tier.featured ? 'text-white' : 'text-foreground'}`}>
-                        {tier.name}
-                      </h3>
-                      <p className={`text-sm ${tier.featured ? 'text-white/70' : 'text-muted-foreground'}`}>
-                        {tier.description}
-                      </p>
-                    </div>
-                    <span className={`px-3 py-1 rounded-full text-xs font-medium ${tier.featured
-                      ? 'bg-copper text-black'
-                      : 'bg-secondary text-muted-foreground'
-                      }`}>
-                      {tier.featured ? 'RECOMMENDED' : 'MOST POPULAR'}
-                    </span>
-                  </div>
-
-                  {/* Price */}
-                  <div className="mb-6">
-                    <div className="flex items-baseline gap-1">
-                      <span className={`text-lg ${tier.featured ? 'text-white/60' : 'text-muted-foreground'}`}>INR</span>
-                      <span className={`text-5xl font-serif font-normal ${tier.featured ? 'text-white' : 'text-foreground'}`}>
-                        {tier.price}
+              {membershipTiers.map((tier, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 40 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: index * 0.2 }}
+                  className={`relative rounded-2xl overflow-hidden ${tier.featured
+                    ? "bg-[#1a1a1a] dark:bg-[#0a0a0a] text-white border border-copper/30"
+                    : "bg-card border border-border"
+                    }`}
+                >
+                  <div className="p-8">
+                    {/* Header */}
+                    <div className="flex items-start justify-between mb-6">
+                      <div>
+                        <h3 className={`text-xl font-serif font-normal mb-1 ${tier.featured ? 'text-white' : 'text-foreground'}`}>
+                          {tier.name}
+                        </h3>
+                        <p className={`text-sm ${tier.featured ? 'text-white/70' : 'text-muted-foreground'}`}>
+                          {tier.description}
+                        </p>
+                      </div>
+                      <span className={`px-3 py-1 rounded-full text-xs font-medium ${tier.featured
+                        ? 'bg-copper text-black'
+                        : 'bg-secondary text-muted-foreground'
+                        }`}>
+                        {tier.featured ? 'RECOMMENDED' : 'MOST POPULAR'}
                       </span>
                     </div>
-                    <p className={`text-sm mt-1 ${tier.featured ? 'text-white/60' : 'text-muted-foreground'}`}>
-                      {tier.period}
-                    </p>
-                  </div>
 
-                  {/* CTA Button */}
-                  <Button
-                    className={`w-full mb-4 ${tier.featured
-                      ? 'bg-copper hover:bg-copper-l text-black'
-                      : 'bg-background border border-border hover:bg-secondary text-foreground'
-                      }`}
-                    size="lg"
-                    onClick={() => {
-                      setFormData({ ...formData, tier: tier.name })
-                      document.getElementById("application-form")?.scrollIntoView({ behavior: "smooth" })
-                    }}
-                  >
-                    Get Started
-                  </Button>
-
-                  <p className={`text-center text-xs mb-8 ${tier.featured ? 'text-white/50' : 'text-muted-foreground'}`}>
-                    + INR {tier.initiation} one-time initiation fee
-                  </p>
-
-                  {/* Benefits */}
-                  <ul className="space-y-3">
-                    {tier.benefits.map((benefit, benefitIndex) => (
-                      <li key={benefitIndex} className="flex items-start gap-3">
-                        <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${tier.featured ? 'bg-copper/20' : 'bg-copper/20'
-                          }`}>
-                          <Check className={`w-3 h-3 ${tier.featured ? 'text-copper-l' : 'text-copper'}`} />
-                        </div>
-                        <span className={`text-sm ${tier.featured ? 'text-white/80' : 'text-foreground'}`}>
-                          {benefit}
+                    {/* Price */}
+                    <div className="mb-6">
+                      <div className="flex items-baseline gap-1">
+                        <span className={`text-lg ${tier.featured ? 'text-white/60' : 'text-muted-foreground'}`}>INR</span>
+                        <span className={`text-5xl font-serif font-normal ${tier.featured ? 'text-white' : 'text-foreground'}`}>
+                          {tier.price}
                         </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </motion.div>
-            ))}
+                      </div>
+                      <p className={`text-sm mt-1 ${tier.featured ? 'text-white/60' : 'text-muted-foreground'}`}>
+                        {tier.period}
+                      </p>
+                    </div>
+
+                    {/* CTA Button */}
+                    <Button
+                      className={`w-full mb-4 ${tier.featured
+                        ? 'bg-copper hover:bg-copper-l text-black'
+                        : 'bg-background border border-border hover:bg-secondary text-foreground'
+                        }`}
+                      size="lg"
+                      onClick={() => {
+                        setFormData({ ...formData, tier: tier.name })
+                        document.getElementById("application-form")?.scrollIntoView({ behavior: "smooth" })
+                      }}
+                    >
+                      Get Started
+                    </Button>
+
+                    <p className={`text-center text-xs mb-8 ${tier.featured ? 'text-white/50' : 'text-muted-foreground'}`}>
+                      + INR {tier.initiation} one-time initiation fee
+                    </p>
+
+                    {/* Benefits */}
+                    <ul className="space-y-3">
+                      {tier.benefits.map((benefit, benefitIndex) => (
+                        <li key={benefitIndex} className="flex items-start gap-3">
+                          <div className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${tier.featured ? 'bg-copper/20' : 'bg-copper/20'
+                            }`}>
+                            <Check className={`w-3 h-3 ${tier.featured ? 'text-copper-l' : 'text-copper'}`} />
+                          </div>
+                          <span className={`text-sm ${tier.featured ? 'text-white/80' : 'text-foreground'}`}>
+                            {benefit}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
 
