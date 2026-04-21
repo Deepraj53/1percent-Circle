@@ -35,7 +35,7 @@ const membershipTiers = [
   {
     name: "Founding Elite",
     subtitle: "Limited to 50 Members",
-    price: "25,00,000",
+    price: "3,00,000",
     period: "per annum",
     initiation: "5,00,000",
     featured: true,
