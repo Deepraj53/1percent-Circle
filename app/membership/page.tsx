@@ -311,7 +311,7 @@ export default function MembershipPage() {
               { image: "/images/membership-cuisine.jpg", category: "LONG LAZY DAY", title: "Gourmet Wellness Cuisine" },
               { image: "/images/membership-spa.jpg", category: "DEEP BREATH", title: "Luxury Spa & Recovery" },
               { image: "/images/membership-events.jpg", category: "MEMBERS ONLY", title: "Exclusive Events" },
-              { image: "/images/membership-strength.jpg", category: "1% CIRCLE", title: "Elite Strength Training" },
+              { image: "/images/membership-strength.jpg", category: "1% CIRCLE", title: "Personal One-on-One Training" },
               { image: "/images/membership-cuisine.jpg", category: "LONG LAZY DAY", title: "Gourmet Wellness Cuisine" },
               { image: "/images/membership-spa.jpg", category: "DEEP BREATH", title: "Luxury Spa & Recovery" },
               { image: "/images/membership-events.jpg", category: "MEMBERS ONLY", title: "Exclusive Events" },
@@ -424,8 +424,8 @@ export default function MembershipPage() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
                 className={`relative rounded-2xl overflow-hidden ${tier.featured
-                    ? "bg-[#1a1a1a] dark:bg-[#0a0a0a] text-white border border-copper/30"
-                    : "bg-card border border-border"
+                  ? "bg-[#1a1a1a] dark:bg-[#0a0a0a] text-white border border-copper/30"
+                  : "bg-card border border-border"
                   }`}
               >
                 <div className="p-8">
@@ -440,8 +440,8 @@ export default function MembershipPage() {
                       </p>
                     </div>
                     <span className={`px-3 py-1 rounded-full text-xs font-medium ${tier.featured
-                        ? 'bg-copper text-black'
-                        : 'bg-secondary text-muted-foreground'
+                      ? 'bg-copper text-black'
+                      : 'bg-secondary text-muted-foreground'
                       }`}>
                       {tier.featured ? 'RECOMMENDED' : 'MOST POPULAR'}
                     </span>
@@ -463,8 +463,8 @@ export default function MembershipPage() {
                   {/* CTA Button */}
                   <Button
                     className={`w-full mb-4 ${tier.featured
-                        ? 'bg-copper hover:bg-copper-l text-black'
-                        : 'bg-background border border-border hover:bg-secondary text-foreground'
+                      ? 'bg-copper hover:bg-copper-l text-black'
+                      : 'bg-background border border-border hover:bg-secondary text-foreground'
                       }`}
                     size="lg"
                     onClick={() => {
