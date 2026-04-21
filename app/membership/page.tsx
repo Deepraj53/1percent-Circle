@@ -33,8 +33,8 @@ const staggerContainer = {
 
 const membershipTiers = [
   {
-    name: "Founding Elite",
-    subtitle: "Limited to 50 Members",
+    name: "Red Carpet Membership Privileges",
+    subtitle: "Limited to 100 Members",
     price: "3,00,000",
     period: "per annum",
     initiation: "5,00,000",
@@ -489,9 +489,7 @@ export default function MembershipPage() {
               <div className="flex-1">
                 <h4 className="font-serif text-xl md:text-2xl font-normal text-foreground mb-3">Notice of Limited Availability</h4>
                 <p className="text-base text-muted-foreground leading-relaxed">
-                  Memberships are made available on a first-come, first-serve basis. Your application is being given
-                  first access to this membership; however, 1% Circle makes no guarantee that this will still be
-                  available after today. Only <span className="text-copper font-medium">47 founding memberships</span> remain.
+                  Memberships are offered on a first-come, first-served basis. Your application will be granted priority access to secure this membership today.
                 </p>
               </div>
             </div>
