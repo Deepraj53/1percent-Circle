@@ -111,7 +111,7 @@ Whether you're training for peak performance or seeking a holistic approach to s
   ],
   gallery: [
     '/Gallery 1.png',
-    '/Gallery 2.png',
+    '/images/precor-equipment.jpg',
     '/Gallery 3.png',
     '/Gallery 4.png',
     '/Gallery 5.png',
