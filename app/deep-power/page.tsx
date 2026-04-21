@@ -33,7 +33,7 @@ Whether you're training for peak performance or seeking a holistic approach to s
       { label: 'Precor Equipment', description: 'equipment & facilities' },
       { label: '24/7 Access', description: 'for platinum members' },
     ],
-    imageSrc: '/og-image.jpg',
+    imageSrc: '/images/gym-overview.jpg',
   },
   facilities: {
     title: 'World-Class Facilities',
