@@ -383,9 +383,6 @@ export default function MembershipPage() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <span className="inline-block border border-border py-1.5 px-4 rounded-full text-xs font-medium tracking-wide text-muted-foreground bg-background mb-4">
-              Simple, Honest Pricing
-            </span>
             <h2 className="text-3xl md:text-5xl font-serif font-normal text-foreground mb-4 text-balance">
               Choose Your Membership
             </h2>
@@ -394,7 +391,8 @@ export default function MembershipPage() {
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          <div className="flex justify-center">
+            <div className="grid lg:grid-cols-1 gap-6 max-w-2xl w-full">
             {membershipTiers.map((tier, index) => (
               <motion.div
                 key={index}
@@ -475,6 +473,7 @@ export default function MembershipPage() {
                 </div>
               </motion.div>
             ))}
+            </div>
           </div>
 
           {/* Notice */}
