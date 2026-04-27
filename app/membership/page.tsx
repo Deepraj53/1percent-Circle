@@ -35,7 +35,7 @@ const membershipTiers = [
   {
     name: "Red Carpet Membership Privileges",
     subtitle: "Limited to 100 Members",
-    price: "3,00,000",
+    price: "3,50,000",
     period: "per annum",
     initiation: "5,00,000",
     featured: true,
