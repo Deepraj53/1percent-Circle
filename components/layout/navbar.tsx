@@ -94,8 +94,8 @@ export function Navbar() {
                 alt="1% Circle"
                 width={196}
                 height={68}
-                className="h-[68px] w-auto brightness-0 invert dark:brightness-100 dark:invert-0 group-hover:opacity-80 transition-opacity"
-                style={{ width: 'auto' }}
+                className="h-[68px] brightness-0 invert dark:brightness-100 dark:invert-0 group-hover:opacity-80 transition-opacity"
+                style={{ width: 'auto', height: 'auto' }}
                 priority
               />
             </Link>
@@ -233,8 +233,8 @@ export function Navbar() {
                     alt="1% Circle"
                     width={136}
                     height={51}
-                    className="h-[51px] w-auto brightness-0 invert dark:brightness-100 dark:invert-0"
-                    style={{ width: 'auto' }}
+                    className="h-[51px] brightness-0 invert dark:brightness-100 dark:invert-0"
+                    style={{ width: 'auto', height: 'auto' }}
                   />
                 </Link>
                 <button
