@@ -6,11 +6,11 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
   ArrowRight,
   Check,
   MessageSquare,
@@ -95,7 +95,7 @@ export default function ContactPage() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
         </div>
-        
+
         <div className="relative z-10 container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -109,7 +109,7 @@ export default function ContactPage() {
               Connect With Us
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
-              Whether you&apos;re interested in membership or have questions, 
+              Whether you&apos;re interested in membership or have questions,
               our concierge team is here to assist you.
             </p>
           </motion.div>
@@ -184,7 +184,7 @@ export default function ContactPage() {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
                     <label className="block text-sm font-medium text-foreground mb-3">
-                      I&apos;m interested in:
+                      Iapos;m interested in:
                     </label>
                     <div className="grid grid-cols-3 gap-3">
                       {inquiryTypes.map((type) => (
@@ -192,15 +192,13 @@ export default function ContactPage() {
                           key={type.id}
                           type="button"
                           onClick={() => setFormData({ ...formData, inquiryType: type.id })}
-                          className={`p-3 rounded-lg border text-center transition-all ${
-                            formData.inquiryType === type.id
+                          className={`p-3 rounded-lg border text-center transition-all ${formData.inquiryType === type.id
                               ? "border-copper bg-primary/5"
                               : "border-border hover:border-copper/30"
-                          }`}
+                            }`}
                         >
-                          <type.icon className={`w-5 h-5 mx-auto mb-1 ${
-                            formData.inquiryType === type.id ? "text-copper" : "text-muted-foreground"
-                          }`} />
+                          <type.icon className={`w-5 h-5 mx-auto mb-1 ${formData.inquiryType === type.id ? "text-copper" : "text-muted-foreground"
+                            }`} />
                           <span className="text-xs text-foreground">{type.label}</span>
                         </button>
                       ))}
@@ -263,9 +261,9 @@ export default function ContactPage() {
                     />
                   </div>
 
-                  <Button 
-                    type="submit" 
-                    className="w-full group" 
+                  <Button
+                    type="submit"
+                    className="w-full group"
                     size="lg"
                     disabled={isSubmitting}
                   >
@@ -292,7 +290,7 @@ export default function ContactPage() {
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-background/20 flex items-center justify-center">
-                  <a 
+                  <a
                     href="https://google.com/maps?q=1+Percent+Circle,+40,+signature+heights,+Shubh+enclave,+Haralur+Main+Rd,+Bengaluru,+Karnataka+560102&ftid=0x3bae13f4e2749e41:0xe7183e888e4d5179&entry=gps&shh=CAE&lucs=,94297699,94275415,94284460,94231188,94280568,47071704,94218641,94282134,94286869&g_ep=CAISEjI1LjQ5LjkuODM4ODk5MTgzMBgAIIgnKlEsOTQyOTc2OTksOTQyNzU0MTUsOTQyODQ0NjAsOTQyMzExODgsOTQyODA1NjgsNDcwNzE3MDQsOTQyMTg2NDEsOTQyODIxMzQsOTQyODY4NjlCAklO&skid=79d79fef-e252-4672-a500-2e4ef1e3248a&g_st=ic"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -307,7 +305,7 @@ export default function ContactPage() {
               <div className="bg-background border border-border rounded-xl p-6">
                 <h3 className="font-serif text-xl text-foreground mb-4">Schedule a Private Tour</h3>
                 <p className="text-muted-foreground mb-4">
-                  Experience 1% Circle firsthand with a private, guided tour of our facilities. 
+                  Experience 1% Circle firsthand with a private, guided tour of our facilities.
                   Our concierge will personally walk you through each wellness pillar.
                 </p>
                 <ul className="space-y-2 mb-6">
