@@ -92,7 +92,7 @@ Our cafe isn't just a place to eat — it's a gathering space for meaningful con
       name: '1% Circle',
       tagline: 'Where strength meets discipline',
       href: '/deep-power',
-      eyebrow: 'GYM & RE
+      eyebrow: 'GYM & RECOVERY',
     },
     {
       name: 'Deep Breath',
