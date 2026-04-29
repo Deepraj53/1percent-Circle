@@ -93,7 +93,7 @@ export default function ContactPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+          <div className="absolute inset-0 bg-linear-to-b from-background/80 via-background/60 to-background" />
         </div>
 
         <div className="relative z-10 container mx-auto px-6 text-center">
@@ -193,8 +193,8 @@ export default function ContactPage() {
                           type="button"
                           onClick={() => setFormData({ ...formData, inquiryType: type.id })}
                           className={`p-3 rounded-lg border text-center transition-all ${formData.inquiryType === type.id
-                              ? "border-copper bg-primary/5"
-                              : "border-border hover:border-copper/30"
+                            ? "border-copper bg-primary/5"
+                            : "border-border hover:border-copper/30"
                             }`}
                         >
                           <type.icon className={`w-5 h-5 mx-auto mb-1 ${formData.inquiryType === type.id ? "text-copper" : "text-muted-foreground"
@@ -282,7 +282,7 @@ export default function ContactPage() {
               transition={{ duration: 0.8 }}
               className="space-y-8"
             >
-              <div className="aspect-square lg:aspect-[4/3] relative rounded-xl overflow-hidden border border-border">
+              <div className="aspect-square lg:aspect-4/3 relative rounded-xl overflow-hidden border border-border">
                 <Image
                   src="/images/location-map.jpg"
                   alt="1% Circle Location"
