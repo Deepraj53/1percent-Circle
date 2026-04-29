@@ -451,7 +451,7 @@ export default function MembershipPage() {
                     </Button>
 
                     <p className={`text-center text-xs mb-8 ${tier.featured ? 'text-white/50' : 'text-muted-foreground'}`}>
-                      + INR {tier.initiation} one-time initiation fee
+                      For exclusive offers and custom package get in touch with us.
                     </p>
 
                     {/* Benefits */}

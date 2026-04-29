@@ -36,9 +36,8 @@ export default function RefundPolicyPage() {
             <section className="mb-12">
               <h2 className="text-2xl font-serif text-foreground mb-4">2. Initiation Fee</h2>
               <p className="text-muted-foreground leading-relaxed">
-                The one-time initiation fee is non-refundable under all circumstances. This 
-                fee covers administrative costs associated with processing your membership 
-                application, orientation, and initial setup.
+                For details on initiation fees and exclusive offers, please contact us directly 
+                as these are customized based on individual membership packages and requirements.
               </p>
             </section>
 
