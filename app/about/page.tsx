@@ -54,14 +54,6 @@ const values = [
   }
 ]
 
-const milestones = [
-  { year: "2020", title: "Vision Conceived", description: "The founders envision a new paradigm in premium wellness for India's elite." },
-  { year: "2022", title: "Location Secured", description: "A prime 25,000 sq ft space in Bangalore's most prestigious address is secured." },
-  { year: "2023", title: "Design & Development", description: "World-renowned architects and wellness consultants shape the space." },
-  { year: "2024", title: "Team Assembly", description: "Internationally certified experts from around the globe join our mission." },
-  { year: "2025", title: "Grand Opening", description: "1% Circle opens its doors to 100 founding members." }
-]
-
 const leadership = [
   {
     name: "Vikram Reddy",
@@ -237,53 +229,6 @@ export default function AboutPage() {
               </motion.div>
             ))}
           </motion.div>
-        </div>
-      </section>
-
-      {/* Timeline Section */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="text-center mb-16"
-          >
-            <span className="text-copper font-medium tracking-[0.2em] uppercase text-sm">
-              Our Journey
-            </span>
-            <h2 className="text-3xl md:text-5xl font-serif font-light text-foreground mt-4 text-balance">
-              Milestones
-            </h2>
-          </motion.div>
-
-          <div className="max-w-4xl mx-auto">
-            {milestones.map((milestone, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -40 : 40 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="relative flex items-start gap-8 mb-12 last:mb-0"
-              >
-                <div className="flex-shrink-0 w-24 text-right">
-                  <span className="text-3xl font-serif text-copper">{milestone.year}</span>
-                </div>
-                <div className="relative flex-shrink-0">
-                  <div className="w-4 h-4 rounded-full bg-primary" />
-                  {index < milestones.length - 1 && (
-                    <div className="absolute top-4 left-1/2 -translate-x-1/2 w-px h-20 bg-border" />
-                  )}
-                </div>
-                <div className="flex-1 pb-8">
-                  <h3 className="text-xl font-serif text-foreground mb-2">{milestone.title}</h3>
-                  <p className="text-muted-foreground">{milestone.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
         </div>
       </section>
 
