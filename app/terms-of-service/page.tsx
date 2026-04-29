@@ -53,9 +53,9 @@ export default function TermsOfServicePage() {
 
               <h3 className="text-xl font-serif text-foreground mb-3">2.3 Membership Fees</h3>
               <ul className="list-disc pl-6 text-muted-foreground space-y-2 mb-4">
-                <li>A one-time, non-refundable initiation fee is required upon membership approval</li>
                 <li>Annual membership fees are payable in advance</li>
                 <li>Additional services may incur separate charges</li>
+                <li>For exclusive offers and custom packages, get in touch with us</li>
                 <li>Fees are subject to applicable taxes</li>
               </ul>
 

@@ -89,10 +89,10 @@ Our cafe isn't just a place to eat — it's a gathering space for meaningful con
   },
   crossLinks: [
     {
-      name: '1% Circl',
+      name: '1% Circle',
       tagline: 'Where strength meets discipline',
       href: '/deep-power',
-      eyebrow: 'GYM & RECOVERY',
+      eyebrow: 'GYM & RE
     },
     {
       name: 'Deep Breath',
