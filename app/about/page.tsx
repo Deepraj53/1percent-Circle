@@ -341,37 +341,6 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-5xl font-serif font-light text-foreground mt-4 mb-6 text-balance">
                 25,000 Sq Ft of Luxury
               </h2>
-              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
-                <p>
-                  Nestled in Bangalore&apos;s most prestigious locale, our 25,000 square foot 
-                  sanctuary has been meticulously designed by world-renowned architects who 
-                  specialize in ultra-luxury wellness spaces.
-                </p>
-                <p>
-                  Every material, every texture, every light fixture has been carefully 
-                  selected to create an atmosphere of refined tranquility. The space 
-                  seamlessly blends contemporary elegance with warm, inviting comfort.
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-2 gap-6 mt-8">
-                <div className="text-center p-4 bg-card rounded-xl border border-border">
-                  <AnimatedCounter value={25000} className="text-3xl font-serif text-copper" />
-                  <p className="text-sm text-muted-foreground mt-1">Square Feet</p>
-                </div>
-                <div className="text-center p-4 bg-card rounded-xl border border-border">
-                  <AnimatedCounter value={100} className="text-3xl font-serif text-copper" />
-                  <p className="text-sm text-muted-foreground mt-1">Founding Members</p>
-                </div>
-                <div className="text-center p-4 bg-card rounded-xl border border-border">
-                  <AnimatedCounter value={3} className="text-3xl font-serif text-copper" />
-                  <p className="text-sm text-muted-foreground mt-1">Wellness Pillars</p>
-                </div>
-                <div className="text-center p-4 bg-card rounded-xl border border-border">
-                  <span className="text-3xl font-serif text-copper">24/7</span>
-                  <p className="text-sm text-muted-foreground mt-1">Concierge Service</p>
-                </div>
-              </div>
             </motion.div>
           </div>
         </div>
