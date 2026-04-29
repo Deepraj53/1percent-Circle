@@ -2,7 +2,6 @@ import { Metadata } from 'next'
 import { ServiceHero } from '@/components/services/service-hero'
 import { ServiceOverview } from '@/components/services/service-overview'
 import { ServiceFacilities } from '@/components/services/service-facilities'
-import { ServiceTeam } from '@/components/services/service-team'
 import { ServiceGallery } from '@/components/services/service-gallery'
 import { ServiceCrossLinks } from '@/components/services/service-cross-links'
 import { ServiceCTA } from '@/components/services/service-cta'
@@ -74,36 +73,6 @@ The atmosphere itself is curated for healing. Soft lighting, therapeutic aromath
       },
     ],
   },
-  team: [
-    {
-      name: 'Lakshmi Iyer',
-      role: 'Spa Director & Lead Therapist',
-      credentials: 'CIBTAC, 18+ Years Luxury Spa Experience',
-      bio: 'Trained in Bali and Thailand, Lakshmi brings a global perspective to wellness while honoring India\'s ancient healing traditions.',
-      imageSrc: '/images/team/therapist-lakshmi.jpg',
-    },
-    {
-      name: 'Yusuf Ahmed',
-      role: 'Hammam Specialist',
-      credentials: 'Traditional Turkish Training, Istanbul',
-      bio: 'Yusuf trained for years in Istanbul\'s historic hammams, mastering the art of this centuries-old purification ritual.',
-      imageSrc: '/images/team/therapist-yusuf.jpg',
-    },
-    {
-      name: 'Dr. Nandini Rao',
-      role: 'Wellness Consultant',
-      credentials: 'MD Ayurveda, Integrative Medicine',
-      bio: 'Dr. Nandini blends Ayurvedic wisdom with modern wellness science to create personalized treatment protocols.',
-      imageSrc: '/images/team/doctor-nandini.jpg',
-    },
-    {
-      name: 'Keiko Tanaka',
-      role: 'Energy Healer',
-      credentials: 'Reiki Master, Sound Therapy Certified',
-      bio: 'Keiko guides members through transformative sessions that restore energetic balance and promote deep healing.',
-      imageSrc: '/images/team/healer-keiko.jpg',
-    },
-  ],
   gallery: [
     '/images/gallery/deep-breath-1.jpg',
     '/images/gallery/deep-breath-2.jpg',
@@ -140,7 +109,6 @@ export default function DeepBreathPage() {
       <ServiceHero {...deepBreathData.hero} logo="/logos/deep-breath.svg" />
       <ServiceOverview {...deepBreathData.overview} />
       <ServiceFacilities {...deepBreathData.facilities} />
-      <ServiceTeam members={deepBreathData.team} />
       <ServiceGallery images={deepBreathData.gallery} />
       <ServiceCrossLinks services={deepBreathData.crossLinks} />
       <ServiceCTA {...deepBreathData.cta} />
