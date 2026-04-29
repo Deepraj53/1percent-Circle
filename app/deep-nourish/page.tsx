@@ -2,7 +2,6 @@ import { Metadata } from 'next'
 import { ServiceHero } from '@/components/services/service-hero'
 import { ServiceOverview } from '@/components/services/service-overview'
 import { ServiceFacilities } from '@/components/services/service-facilities'
-import { ServiceTeam } from '@/components/services/service-team'
 import { ServiceGalleryWithVideo } from '@/components/services/service-gallery-with-video'
 import { ServiceCrossLinks } from '@/components/services/service-cross-links'
 import { ServiceCTA } from '@/components/services/service-cta'
@@ -74,36 +73,6 @@ Our cafe isn't just a place to eat — it's a gathering space for meaningful con
       },
     ],
   },
-  team: [
-    {
-      name: 'Chef Sanjay Malhotra',
-      role: 'Executive Chef',
-      credentials: 'Le Cordon Bleu, 20+ Years Fine Dining',
-      bio: 'Formerly of Michelin-starred kitchens in London and Singapore, Chef Sanjay now crafts healthy cuisine that rivals any gourmet experience.',
-      imageSrc: '/images/team/chef-sanjay.jpg',
-    },
-    {
-      name: 'Dr. Anita Rao',
-      role: 'Head Nutritionist',
-      credentials: 'PhD Nutrition Science, Sports Dietetics',
-      bio: 'Dr. Rao designs personalized nutrition protocols that optimize performance, recovery, and overall wellness for each member.',
-      imageSrc: '/images/team/nutritionist-anita.jpg',
-    },
-    {
-      name: 'Rohan Desai',
-      role: 'Wellness Sommelier',
-      credentials: 'Certified Tea Master, Functional Beverages',
-      bio: 'Rohan curates our beverage program, from adaptogenic lattes to recovery tonics designed to complement your wellness journey.',
-      imageSrc: '/images/team/sommelier-rohan.jpg',
-    },
-    {
-      name: 'Maya Krishna',
-      role: 'Pastry Chef',
-      credentials: 'Healthy Desserts Specialist',
-      bio: 'Maya proves that indulgence can be healthy, creating guilt-free desserts that satisfy cravings without compromise.',
-      imageSrc: '/images/team/pastry-maya.jpg',
-    },
-  ],
   gallery: {
     video: {
       src: '/videos/deep-nourish-gallery.mp4',
@@ -120,7 +89,7 @@ Our cafe isn't just a place to eat — it's a gathering space for meaningful con
   },
   crossLinks: [
     {
-      name: 'Deep Power',
+      name: '1% Circl',
       tagline: 'Where strength meets discipline',
       href: '/deep-power',
       eyebrow: 'GYM & RECOVERY',
@@ -146,7 +115,6 @@ export default function DeepNourishPage() {
       <ServiceHero {...deepNourishData.hero} logo="/logos/long-lazy-day.svg" />
       <ServiceOverview {...deepNourishData.overview} />
       <ServiceFacilities {...deepNourishData.facilities} />
-      <ServiceTeam members={deepNourishData.team} />
       <ServiceGalleryWithVideo {...deepNourishData.gallery} />
       <ServiceCrossLinks services={deepNourishData.crossLinks} />
       <ServiceCTA {...deepNourishData.cta} />

@@ -4,7 +4,12 @@ import { useEffect, useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export function LoaderAnimation() {
+  const [mounted, setMounted] = useState(false)
   const [showLoader, setShowLoader] = useState(true)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   const handleVideoEnd = () => {
     // Video has completed one full sequence
@@ -12,6 +17,9 @@ export function LoaderAnimation() {
       setShowLoader(false)
     }, 300)
   }
+
+  // Don't render anything on the server to avoid hydration mismatch
+  if (!mounted) return null
 
   return (
     <AnimatePresence>
