@@ -37,7 +37,7 @@ const footerLinks = [
 ]
 
 const socialLinks = [
-  { name: 'Instagram', href: 'https://instagram.com/1percentcircle', icon: Instagram },
+  { name: 'Instagram', href: 'https://www.instagram.com/1percentcircle_?igsh=MTZsNG5ydnF4OGRhaQ==', icon: Instagram },
   { name: 'LinkedIn', href: 'https://linkedin.com/company/1percentcircle', icon: Linkedin },
   { name: 'YouTube', href: 'https://youtube.com/@1percentcircle', icon: Youtube },
 ]
