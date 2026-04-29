@@ -341,6 +341,18 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-5xl font-serif font-light text-foreground mt-4 mb-6 text-balance">
                 25,000 Sq Ft of Luxury
               </h2>
+              <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
+                <p>
+                  Nestled in Bangalore&apos;s most prestigious locale, our 25,000 square foot 
+                  sanctuary has been meticulously designed by world-renowned architects who 
+                  specialize in ultra-luxury wellness spaces.
+                </p>
+                <p>
+                  Every material, every texture, every light fixture has been carefully 
+                  selected to create an atmosphere of refined tranquility. The space 
+                  seamlessly blends contemporary elegance with warm, inviting comfort.
+                </p>
+              </div>
             </motion.div>
           </div>
         </div>
