@@ -306,7 +306,7 @@ export default function MembershipPage() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                <div className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6 flex flex-col gap-2">
                   <span className="text-xs font-medium text-white/80 uppercase tracking-widest">
                     {program.category}
