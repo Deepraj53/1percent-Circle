@@ -16,7 +16,7 @@ const longLazyDayData = {
     title: 'Long Lazy Day',
     tagline: 'Fuel that feels like indulgence.',
     eyebrow: 'CAFE & NUTRITION',
-    videoSrc: '/videos/deep-nourish.mp4',
+    videoSrc: '/videos/long-lazy-day-hero.mp4',
     posterSrc: '/Lazy food Hero Image.png',
   },
   overview: {
