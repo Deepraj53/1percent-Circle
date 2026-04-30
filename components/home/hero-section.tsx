@@ -32,7 +32,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-[6] bg-gradient-to-t from-black/60 via-transparent to-black/40 pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
+      <div className="relative z-30 flex h-full flex-col items-center justify-center px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           {/* Eyebrow */}
           <motion.p
@@ -60,7 +60,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mx-auto mt-6 max-w-2xl text-lg text-white/80 sm:text-xl"
+            className="mx-auto mt-6 max-w-2xl text-lg text-white sm:text-xl"
           >
             Where premium fitness, gourmet nutrition, and luxury spa converge under one curated roof. 
             Designed exclusively for those who expect nothing less than extraordinary.
