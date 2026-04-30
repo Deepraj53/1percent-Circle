@@ -203,9 +203,14 @@ export function Footer() {
               &copy; {new Date().getFullYear()} 1% Circle. All rights reserved.
             </p>
             <span className="hidden sm:inline text-muted-foreground/50">|</span>
-            <p className="text-muted-foreground text-xs">
+            <a
+              href="https://happening.design/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-copper transition-colors text-xs"
+            >
               Handcrafted by Happening
-            </p>
+            </a>
             <span className="hidden sm:inline text-muted-foreground/50">|</span>
             <p className="text-muted-foreground text-xs">
               Crafted with excellence for the discerning few.
