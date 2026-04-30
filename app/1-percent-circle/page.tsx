@@ -17,7 +17,7 @@ const onePercentCircleData = {
     tagline: 'Where strength meets discipline.',
     eyebrow: 'GYM & RECOVERY',
     videoSrc: '/videos/deep-power.mp4',
-    posterSrc: '/images/deep-power-hero.jpg',
+    posterSrc: '/images/1percent-circle-hero.jpg',
   },
   overview: {
     title: 'Fitness, Redefined',
