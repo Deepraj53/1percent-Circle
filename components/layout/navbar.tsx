@@ -188,7 +188,7 @@ export function Navbar() {
                 <Button
                   className="hidden sm:inline-flex bg-[#960808] hover:bg-[#7a0606] text-white font-medium px-6 shimmer"
                 >
-                  Book a Call
+                  Book an Appointment
                 </Button>
               </Link>
             </div>
@@ -306,7 +306,7 @@ export function Navbar() {
                   className="block"
                 >
                   <Button className="w-full bg-[#960808] hover:bg-[#7a0606] text-white font-medium h-12">
-                    Book a Call
+                    Book an Appointment
                   </Button>
                 </Link>
               </div>
