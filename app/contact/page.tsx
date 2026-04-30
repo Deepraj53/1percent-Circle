@@ -33,7 +33,8 @@ const contactInfo = [
     icon: Phone,
     title: "Call Us",
     details: [
-      "+91 95915 17774",
+      "+91 95915 17774 (Gym Appointment)",
+      "+91 98454 63989 (Salon & Cafe Appointment)",
       "+91 95915 17774 (WhatsApp)"
     ]
   },
