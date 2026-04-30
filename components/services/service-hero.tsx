@@ -60,8 +60,8 @@ export function ServiceHero({
             priority
           />
         )}
-        {/* Dark gradient overlay - fades from dark at bottom to transparent at top */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+        {/* Dark gradient overlay - matches Contact page style */}
+        <div className="absolute inset-x-0 bottom-0 h-2/3 bg-linear-to-t from-background via-background/60 to-transparent" />
         {/* Copper tint */}
         <div className="absolute inset-0 bg-gradient-to-tr from-[#FFC387]/5 to-transparent" />
       </div>
