@@ -2,7 +2,6 @@ import { Metadata } from 'next'
 import { ServiceHero } from '@/components/services/service-hero'
 import { ServiceOverview } from '@/components/services/service-overview'
 import { ServiceFacilities } from '@/components/services/service-facilities'
-import { ServiceTeam } from '@/components/services/service-team'
 import { ServiceGallery } from '@/components/services/service-gallery'
 import { ServiceCrossLinks } from '@/components/services/service-cross-links'
 import { ServiceCTA } from '@/components/services/service-cta'
@@ -12,7 +11,7 @@ export const metadata: Metadata = {
   description: 'State-of-the-art Precor fitness equipment, private training zones, and comprehensive recovery facilities. Experience fitness redefined at 1% Circle.',
 }
 
-const deepPowerData = {
+const onePercentCircleData = {
   hero: {
     title: '1% Circle',
     tagline: 'Where strength meets discipline.',
@@ -77,36 +76,6 @@ Whether you're training for peak performance or seeking a holistic approach to s
       },
     ],
   },
-  team: [
-    {
-      name: 'Arjun Kapoor',
-      role: 'Head Trainer & Performance Director',
-      credentials: 'NSCA-CSCS, ACE-CPT, 15+ Years Experience',
-      bio: 'Former national-level athlete turned elite coach. Arjun has trained executives, celebrities, and athletes across three continents.',
-      imageSrc: '/images/team/trainer-arjun.jpg',
-    },
-    {
-      name: 'Priya Venkatesh',
-      role: 'Strength & Conditioning Coach',
-      credentials: 'MSc Sports Science, UKSCA Accredited',
-      bio: 'Specializing in biomechanics and injury prevention, Priya designs programs that build sustainable strength.',
-      imageSrc: '/images/team/trainer-priya.jpg',
-    },
-    {
-      name: 'Dr. Rahul Sharma',
-      role: 'Sports Physiotherapist',
-      credentials: 'DPT, Sports Medicine Fellow',
-      bio: 'With experience in professional sports medicine, Dr. Sharma ensures every member trains safely and recovers optimally.',
-      imageSrc: '/images/team/physio-rahul.jpg',
-    },
-    {
-      name: 'Kavita Nair',
-      role: 'Nutrition Consultant',
-      credentials: 'RD, Sports Nutrition Specialist',
-      bio: 'Kavita bridges the gap between training and nutrition, creating customized plans that fuel performance.',
-      imageSrc: '/images/team/nutritionist-kavita.jpg',
-    },
-  ],
   gallery: [
     '/Gallery 1.png',
     '/images/precor-equipment.jpg',
@@ -119,7 +88,7 @@ Whether you're training for peak performance or seeking a holistic approach to s
     {
       name: 'Long Lazy Day',
       tagline: 'Fuel that feels like indulgence',
-      href: '/deep-nourish',
+      href: '/long-lazy-day',
       eyebrow: 'CAFE & NUTRITION',
     },
     {
@@ -137,16 +106,15 @@ Whether you're training for peak performance or seeking a holistic approach to s
   },
 }
 
-export default function DeepPowerPage() {
+export default function OnePercentCirclePage() {
   return (
     <main>
-      <ServiceHero {...deepPowerData.hero} logo="/logos/1percent-circle-logo.svg" />
-      <ServiceOverview {...deepPowerData.overview} />
-      <ServiceFacilities {...deepPowerData.facilities} />
-      <ServiceTeam members={deepPowerData.team} />
-      <ServiceGallery images={deepPowerData.gallery} />
-      <ServiceCrossLinks services={deepPowerData.crossLinks} />
-      <ServiceCTA {...deepPowerData.cta} />
+      <ServiceHero {...onePercentCircleData.hero} logo="/logos/1percent-circle-logo.svg" />
+      <ServiceOverview {...onePercentCircleData.overview} />
+      <ServiceFacilities {...onePercentCircleData.facilities} />
+      <ServiceGallery images={onePercentCircleData.gallery} />
+      <ServiceCrossLinks services={onePercentCircleData.crossLinks} />
+      <ServiceCTA {...onePercentCircleData.cta} />
     </main>
   )
 }
