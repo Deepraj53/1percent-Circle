@@ -30,8 +30,6 @@ Whether you're training for peak performance or seeking a holistic approach to s
     features: [
       { label: '4000 sq.ft.', description: 'of premium training space' },
       { label: '1:7 Ratio', description: 'trainer to member' },
-      { label: 'Precor Equipment', description: 'equipment & facilities' },
-      { label: '24/7 Access', description: 'for platinum members' },
     ],
     imageSrc: '/images/gym-overview.jpg',
   },

@@ -93,10 +93,10 @@ export default function ContactPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-linear-to-b from-background/80 via-background/60 to-background" />
+          <div className="absolute inset-x-0 bottom-0 top-16 bg-linear-to-b from-background/60 via-background/50 to-background" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-6 text-center">
+        <div className="relative z-10 container mx-auto px-6 text-center mt-16">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -284,7 +284,7 @@ export default function ContactPage() {
             >
               <div className="aspect-square lg:aspect-4/3 relative rounded-xl overflow-hidden border border-border">
                 <Image
-                  src="/images/location-map.jpg"
+                  src="/images/deep-power-hero.jpg"
                   alt="1% Circle Location"
                   fill
                   className="object-cover"
