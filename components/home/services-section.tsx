@@ -18,7 +18,7 @@ const services = [
     backDescription:
       'Experience fitness redefined with 4000 sq.ft. of premium training space, Precor equipment, and a 1:7 trainer-to-member ratio. Our recovery zone includes cryotherapy, infrared saunas, and professional sports massage.',
     features: ['4000 sq.ft.', 'Precor Equipment', '1:7 Trainer Ratio'],
-    href: '/deep-power',
+    href: '/1-percent-circle',
     image: '/DEEP POWER IMAGE CARD.png',
     logo: '/logos/1percent-circle-logo-white.svg',
     logoClassName: 'h-10 w-auto',
@@ -34,7 +34,7 @@ const services = [
     backDescription:
       'Our in-house chef creates 100% organic, locally-sourced meals tailored to your fitness goals. Enjoy custom meal plans, post-workout nutrition, and gourmet health cuisine that proves healthy eating can be delicious.',
     features: ['100% Organic', 'In-house Chef', 'Custom Meal Plans'],
-    href: '/deep-nourish',
+    href: '/long-lazy-day',
     image: '/images/long-lazy-day-preview.jpg',
     logo: '/logos/long-lazy-day.svg',
     logoClassName: 'h-10 w-auto brightness-0 dark:brightness-0 dark:invert',

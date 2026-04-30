@@ -13,13 +13,13 @@ const services = [
   {
     name: '1% Circle',
     tagline: 'State-of-the-art fitness for the 1%',
-    href: '/deep-power',
+    href: '/1-percent-circle',
     icon: 'gym',
   },
   {
     name: 'Long Lazy Day',
     tagline: 'Where health meets haute cuisine',
-    href: '/deep-nourish',
+    href: '/long-lazy-day',
     icon: 'cafe',
   },
   {
