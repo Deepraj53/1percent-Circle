@@ -93,10 +93,10 @@ export default function ContactPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-x-0 bottom-0 top-40 bg-linear-to-b from-background/60 via-background/50 to-background" />
+          <div className="absolute inset-x-0 bottom-0 top-0 bg-gradient-to-b from-transparent via-background/40 to-background" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-6 text-center mt-40">
+        <div className="relative z-10 container mx-auto px-6 text-center mt-80">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
