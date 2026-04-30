@@ -84,13 +84,13 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[20vh] min-h-[500px] flex items-end justify-center overflow-hidden pb-16">
+      <section className="relative h-[70vh] min-h-[560px] flex items-end justify-center overflow-hidden pb-16">
         <div className="absolute inset-0">
           <Image
             src="/images/contact-hero.jpg"
             alt="Contact 1% Circle"
             fill
-            className="object-cover object-top"
+            className="object-cover object-center"
             priority
           />
           <div className="absolute inset-x-0 bottom-0 h-2/3 bg-linear-to-t from-background via-background/60 to-transparent" />
