@@ -16,7 +16,7 @@ const onePercentCircleData = {
     title: '1% Circle',
     tagline: 'Where strength meets discipline.',
     eyebrow: 'GYM & RECOVERY',
-    videoSrc: '/videos/deep-power.mp4',
+    videoSrc: '/videos/1percent-circle-hero.mp4',
     posterSrc: '/images/1percent-circle-hero.jpg',
   },
   overview: {
