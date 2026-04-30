@@ -106,7 +106,7 @@ export default function ContactPage() {
               Get in Touch
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-light text-foreground mb-6 text-balance">
-              Connect With Us
+              Connect With Us.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
               Whether you&apos;re interested in membership or have questions,
