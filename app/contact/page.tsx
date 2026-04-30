@@ -98,7 +98,7 @@ export default function ContactPage() {
 
         <div className="relative z-10 container mx-auto px-6 text-center mt-40">
           <motion.div
-            initial={{ opacity: 0, y: 80 }}
+            initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
