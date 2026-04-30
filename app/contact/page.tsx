@@ -84,19 +84,19 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[50vh] min-h-[400px] flex items-center justify-center overflow-hidden">
+      <section className="relative h-[70vh] min-h-[500px] flex items-end justify-center overflow-hidden pb-16">
         <div className="absolute inset-0">
           <Image
             src="/images/contact-hero.jpg"
             alt="Contact 1% Circle"
             fill
-            className="object-cover"
+            className="object-cover object-top"
             priority
           />
-          <div className="absolute inset-x-0 bottom-0 top-0 bg-gradient-to-b from-transparent via-background/40 to-background" />
+          <div className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-background via-background/60 to-transparent" />
         </div>
 
-        <div className="relative z-10 container mx-auto px-6 text-center mt-80">
+        <div className="relative z-10 container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
