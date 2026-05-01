@@ -152,7 +152,7 @@ export default function AboutPage() {
             {/* Main Image */}
             <div className="relative aspect-[16/10] md:aspect-[2/1] lg:aspect-[2.5/1] overflow-hidden rounded-xl lg:rounded-2xl">
               <Image
-                src="/Philosophy.jpg"
+                src="/images/interior-1percent.jpg"
                 alt="1% Circle Philosophy"
                 fill
                 className="object-cover"
@@ -295,7 +295,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4">
                 <div className="aspect-square relative rounded-xl overflow-hidden">
                   <Image
-                    src="/Philosophy.jpg"
+                    src="/images/interior-1percent.jpg"
                     alt="Members Lounge"
                     fill
                     className="object-cover"

@@ -88,7 +88,7 @@ export default function ContactPage() {
       <section className="relative h-[70vh] min-h-[560px] flex items-end justify-center overflow-hidden pb-16">
         <div className="absolute inset-0">
           <Image
-            src="/images/contact-hero.jpg"
+            src="/images/reception-contact.jpg"
             alt="Contact 1% Circle"
             fill
             className="object-cover object-center"
