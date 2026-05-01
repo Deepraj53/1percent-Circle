@@ -88,7 +88,7 @@ export default function AboutPage() {
             className="object-cover"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+          <div className="absolute inset-0 bg-linear-to-b from-background/80 via-background/60 to-background" />
         </div>
         
         <div className="relative z-10 container mx-auto px-6 text-center">
@@ -150,7 +150,7 @@ export default function AboutPage() {
             className="relative"
           >
             {/* Main Image */}
-            <div className="relative aspect-[16/10] md:aspect-[2/1] lg:aspect-[2.5/1] overflow-hidden rounded-xl lg:rounded-2xl">
+            <div className="relative aspect-16/10 md:aspect-[2/1] lg:aspect-[2.5/1] overflow-hidden rounded-xl lg:rounded-2xl">
               <Image
                 src="/images/interior-1percent.jpg"
                 alt="1% Circle Philosophy"
