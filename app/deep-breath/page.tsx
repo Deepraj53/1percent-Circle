@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import Image from 'next/image'
 import { ServiceHero } from '@/components/services/service-hero'
 import { ServiceOverview } from '@/components/services/service-overview'
 import { ServiceFacilities } from '@/components/services/service-facilities'
@@ -109,12 +110,57 @@ The atmosphere itself is curated for healing. Soft lighting, therapeutic aromath
   },
 }
 
+const deepBreathTeam = [
+  {
+    name: 'Pallavi H Chandru',
+    role: 'Director',
+    image: '/images/team/pallavi.jpg',
+  },
+  {
+    name: 'Pavithra',
+    role: 'Director',
+    image: '/images/team/pavithra.jpg',
+  },
+]
+
 export default function DeepBreathPage() {
   return (
     <main>
       <ServiceHero {...deepBreathData.hero} logo="/logos/deep-breath.svg" />
       <ServiceOverview {...deepBreathData.overview} />
       <ServiceFacilities {...deepBreathData.facilities} />
+
+      {/* Team Section */}
+      <section className="py-24 bg-card">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-16">
+            <span className="text-copper font-medium tracking-[0.2em] uppercase text-sm">
+              The Team
+            </span>
+            <h2 className="text-3xl md:text-5xl font-serif font-light text-foreground mt-4 text-balance">
+              Meet the Directors
+            </h2>
+          </div>
+          <div className="flex justify-center gap-12 flex-wrap">
+            {deepBreathTeam.map((member, index) => (
+              <div key={index} className="group text-center w-64">
+                <div className="relative aspect-3/4 rounded-xl overflow-hidden mb-4">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-background/80 via-transparent to-transparent" />
+                </div>
+                <h3 className="text-xl font-serif text-foreground mb-1">{member.name}</h3>
+                <p className="text-copper font-medium text-sm">{member.role}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <ServiceGalleryWithVideo {...deepBreathData.gallery} />
       <ServiceCrossLinks services={deepBreathData.crossLinks} />
       <ServiceCTA {...deepBreathData.cta} />

@@ -56,23 +56,25 @@ const values = [
 
 const leadership = [
   {
-    name: "Vikram Reddy",
-    role: "Founder & CEO",
+    name: "Mahesh Babu",
+    role: "Co-Founder",
     image: "/images/team/founder-vikram.jpg",
-    bio: "A former investment banker turned wellness entrepreneur, Vikram's vision of creating India's most exclusive wellness sanctuary stems from his personal transformation journey."
   },
   {
-    name: "Dr. Meera Krishnan",
-    role: "Chief Wellness Officer",
-    image: "/images/team/cwo-meera.jpg",
-    bio: "With 20 years in integrative medicine and certifications from Harvard and the Chopra Center, Dr. Meera designs our holistic wellness protocols."
+    name: "Daksh M Joshi",
+    role: "Co-Founder",
+    image: "/images/team/daksh-m-joshi.jpg",
   },
   {
-    name: "Arun Menon",
-    role: "Director of Operations",
-    image: "/images/team/director-arun.jpg",
-    bio: "Former General Manager at The Oberoi, Arun brings two decades of ultra-luxury hospitality experience to ensure impeccable service standards."
-  }
+    name: "Sunitha M Joshi",
+    role: "Co-Founder",
+    image: "/images/team/sunita-m-joshi.jpg",
+  },
+  {
+    name: "Dhana Teja Javvaji",
+    role: "Co-Founder",
+    image: "/images/team/dhana-teja.jpg",
+  },
 ]
 
 export default function AboutPage() {
@@ -255,7 +257,7 @@ export default function AboutPage() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid md:grid-cols-3 gap-8"
+            className="grid grid-cols-2 md:grid-cols-4 gap-8"
           >
             {leadership.map((leader, index) => (
               <motion.div
@@ -263,7 +265,7 @@ export default function AboutPage() {
                 variants={fadeInUp}
                 className="group"
               >
-                <div className="relative aspect-3/4 rounded-xl overflow-hidden mb-6">
+                <div className="relative aspect-3/4 rounded-xl overflow-hidden mb-4">
                   <Image
                     src={leader.image}
                     alt={leader.name}
@@ -272,9 +274,8 @@ export default function AboutPage() {
                   />
                   <div className="absolute inset-0 bg-linear-to-t from-background/80 via-transparent to-transparent" />
                 </div>
-                <h3 className="text-2xl font-serif text-foreground mb-1">{leader.name}</h3>
-                <p className="text-copper font-medium mb-3">{leader.role}</p>
-                <p className="text-muted-foreground leading-relaxed">{leader.bio}</p>
+                <h3 className="text-lg font-serif text-foreground mb-1">{leader.name}</h3>
+                <p className="text-copper font-medium text-sm">{leader.role}</p>
               </motion.div>
             ))}
           </motion.div>
