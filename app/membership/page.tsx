@@ -201,7 +201,7 @@ export default function MembershipPage() {
               className="flex flex-col sm:flex-row items-center gap-4"
             >
               <button
-                onClick={() => document.getElementById("application-form")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() => document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })}
                 className="flex flex-row items-center gap-2 px-8 py-4 rounded-full transition-all hover:scale-105 bg-foreground text-background font-medium"
                 style={{ boxShadow: "0 4px 16px rgba(0, 0, 0, 0.15)" }}
               >
@@ -444,7 +444,7 @@ export default function MembershipPage() {
                       size="lg"
                       onClick={() => {
                         setFormData({ ...formData, tier: tier.name })
-                        document.getElementById("application-form")?.scrollIntoView({ behavior: "smooth" })
+                        document.getElementById("form")?.scrollIntoView({ behavior: "smooth" })
                       }}
                     >
                       Get Started
