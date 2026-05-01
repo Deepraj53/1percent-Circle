@@ -33,23 +33,19 @@ export function FeaturedInSection() {
           <p className="text-center text-sm text-muted-foreground mb-8 tracking-widest uppercase">
             Featured in
           </p>
-          <div className="flex items-center justify-center">
-            {pressOutlets.map((press, index) => (
+          <div className="flex flex-wrap items-center justify-center gap-12 lg:gap-20">
+            {pressOutlets.map((press) => (
               <a
                 key={press.name}
                 href={press.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group flex flex-col items-center gap-1 transition-opacity duration-300 ${
-                  index === 1 ? 'opacity-100' : 'opacity-50 hover:opacity-100'
-                }`}
+                className="group flex flex-col items-center gap-1 opacity-50 hover:opacity-100 transition-opacity duration-300"
               >
                 <span className="text-foreground font-serif text-xl lg:text-2xl font-light tracking-tight group-hover:text-copper transition-colors duration-300 whitespace-nowrap">
                   {press.name}
                 </span>
-                <span className={`text-xs tracking-widest uppercase transition-colors duration-300 ${
-                  index === 1 ? 'text-muted-foreground' : 'text-muted-foreground group-hover:text-copper/70'
-                }`}>
+                <span className="text-muted-foreground text-xs tracking-widest uppercase group-hover:text-copper/70 transition-colors duration-300">
                   {press.tagline}
                 </span>
               </a>
