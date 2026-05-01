@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { ServiceHero } from '@/components/services/service-hero'
 import { ServiceOverview } from '@/components/services/service-overview'
 import { ServiceFacilities } from '@/components/services/service-facilities'
-import { ServiceGallery } from '@/components/services/service-gallery'
+import { ServiceGalleryWithVideo } from '@/components/services/service-gallery-with-video'
 import { ServiceCrossLinks } from '@/components/services/service-cross-links'
 import { ServiceCTA } from '@/components/services/service-cta'
 
@@ -73,14 +73,20 @@ The atmosphere itself is curated for healing. Soft lighting, therapeutic aromath
       },
     ],
   },
-  gallery: [
-    '/images/gallery/deep-breath-1.jpg',
-    '/images/gallery/deep-breath-2.jpg',
-    '/images/gallery/deep-breath-3.jpg',
-    '/images/gallery/deep-breath-4.jpg',
-    '/images/gallery/deep-breath-5.jpg',
-    '/images/gallery/deep-breath-6.jpg',
-  ],
+  gallery: {
+    video: {
+      src: '/videos/deep-breath.mp4',
+      poster: '/images/deep-breath-gallery-poster.jpg',
+      alt: 'Deep Breath spa experience',
+      title: 'Wellness Journey',
+    },
+    images: [
+      '/images/gallery/deep-breath-3.jpg',
+      '/images/gallery/deep-breath-4.jpg',
+      '/images/gallery/deep-breath-5.jpg',
+      '/images/gallery/deep-breath-6.jpg',
+    ],
+  },
   crossLinks: [
     {
       name: '1% Circle',
@@ -109,7 +115,7 @@ export default function DeepBreathPage() {
       <ServiceHero {...deepBreathData.hero} logo="/logos/deep-breath.svg" />
       <ServiceOverview {...deepBreathData.overview} />
       <ServiceFacilities {...deepBreathData.facilities} />
-      <ServiceGallery images={deepBreathData.gallery} />
+      <ServiceGalleryWithVideo {...deepBreathData.gallery} />
       <ServiceCrossLinks services={deepBreathData.crossLinks} />
       <ServiceCTA {...deepBreathData.cta} />
     </main>

@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 import { ServiceHero } from '@/components/services/service-hero'
 import { ServiceOverview } from '@/components/services/service-overview'
 import { ServiceFacilities } from '@/components/services/service-facilities'
-import { ServiceGallery } from '@/components/services/service-gallery'
+import { ServiceGalleryWithVideo } from '@/components/services/service-gallery-with-video'
 import { ServiceCrossLinks } from '@/components/services/service-cross-links'
 import { ServiceCTA } from '@/components/services/service-cta'
 
@@ -76,14 +76,20 @@ Whether you're training for peak performance or seeking a holistic approach to s
       },
     ],
   },
-  gallery: [
-    '/Gallery 1.png',
-    '/images/precor-equipment.jpg',
-    '/Gallery 3.png',
-    '/Gallery 4.png',
-    '/Gallery 5.png',
-    '/Gallery 6.png',
-  ],
+  gallery: {
+    video: {
+      src: '/videos/1percent-circle-gallery.mp4',
+      poster: '/images/1percent-circle-gallery-poster.jpg',
+      alt: '1% Circle gym experience',
+      title: 'Fitness Journey',
+    },
+    images: [
+      '/Gallery 3.png',
+      '/Gallery 4.png',
+      '/Gallery 5.png',
+      '/Gallery 6.png',
+    ],
+  },
   crossLinks: [
     {
       name: 'Long Lazy Day',
@@ -112,7 +118,7 @@ export default function OnePercentCirclePage() {
       <ServiceHero {...onePercentCircleData.hero} logo="/logos/1percent-circle-logo.svg" />
       <ServiceOverview {...onePercentCircleData.overview} />
       <ServiceFacilities {...onePercentCircleData.facilities} />
-      <ServiceGallery images={onePercentCircleData.gallery} />
+      <ServiceGalleryWithVideo {...onePercentCircleData.gallery} />
       <ServiceCrossLinks services={onePercentCircleData.crossLinks} />
       <ServiceCTA {...onePercentCircleData.cta} />
     </main>
