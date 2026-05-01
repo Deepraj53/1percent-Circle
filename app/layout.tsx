@@ -86,7 +86,7 @@ export default function RootLayout({
       <Head>
         <meta property="og:image" content="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1_%20Circle%207.png-wa1sGC36HJzZi4hd9ECHPu04E682Yg.jpeg" />
       </Head>
-      <body className={`${elMessiri.variable} ${sora.variable} font-sans antialiased`} suppressHydrationWarning>
+      <body className={`${elMessiri.variable} ${sora.variable} font-sans antialiased w-full overflow-x-hidden`} suppressHydrationWarning>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
