@@ -311,7 +311,7 @@ export default function AboutPage() {
                 </div>
                 <div className="aspect-square relative rounded-xl overflow-hidden">
                   <Image
-                    src="/1percent Dumble.jpg"
+                    src="/images/1percent-dumble.jpg"
                     alt="Spa Treatment"
                     fill
                     className="object-cover"
