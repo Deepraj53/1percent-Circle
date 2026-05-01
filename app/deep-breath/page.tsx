@@ -82,7 +82,7 @@ The atmosphere itself is curated for healing. Soft lighting, therapeutic aromath
     },
     images: [
       '/images/gallery/deep-breath-shower.jpg',
-      '/images/gallery/deep-breath-4.jpg',
+      '/images/interior-1percent.jpg',
       '/images/gallery/deep-breath-gallery-a.jpg',
       '/images/gallery/deep-breath-gallery-b.jpg',
     ],
