@@ -28,7 +28,7 @@ export function LoaderAnimation() {
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6, ease: 'easeInOut' }}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-background"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-background w-screen h-screen"
         >
           {/* Video container centered and smaller */}
           <motion.div
@@ -41,7 +41,7 @@ export function LoaderAnimation() {
               autoPlay
               muted
               playsInline
-              className="w-64 h-64 md:w-96 md:h-96 object-contain"
+              className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 object-contain"
               onEnded={handleVideoEnd}
             >
               <source src="/videos/loader-animation.mp4" type="video/mp4" />

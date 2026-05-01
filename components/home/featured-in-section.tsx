@@ -22,8 +22,8 @@ const pressOutlets = [
 
 export function FeaturedInSection() {
   return (
-    <section className="py-12 lg:py-16 bg-background border-b border-border">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="py-12 lg:py-16 bg-background border-b border-border w-full">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
