@@ -74,20 +74,20 @@ export function Navbar() {
         )}
       >
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-20 items-center justify-between">
+          <div className="flex h-20 items-center justify-center relative">
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="lg:hidden p-2 -ml-2 text-foreground hover:text-copper transition-colors"
+              className="lg:hidden p-2 -ml-2 text-foreground hover:text-copper transition-colors absolute left-0"
               aria-label="Open menu"
             >
               <Menu className="h-6 w-6" />
             </button>
 
-            {/* Logo */}
+            {/* Logo - Left Side */}
             <Link
               href="/"
-              className="flex items-center gap-2 group"
+              className="flex items-center gap-2 group absolute left-0 lg:relative"
             >
               <Image
                 src="/logos/1percent-circle-logo.svg"
@@ -181,8 +181,8 @@ export function Navbar() {
               ))}
             </div>
 
-            {/* Right Section */}
-            <div className="flex items-center gap-4">
+            {/* Right Section - CTA Button */}
+            <div className="flex items-center gap-4 absolute right-0 lg:relative">
               {/* Book a Call CTA */}
               <Link href="/membership#form">
                 <Button
