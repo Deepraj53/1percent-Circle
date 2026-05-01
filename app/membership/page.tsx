@@ -114,10 +114,10 @@ const applicationSteps = [
 const faqs = [
   {
     question: "What makes 1% Circle different from other fitness clubs?",
-    answer: "1% Circle is not just a fitness club—it&apos;s a comprehensive wellness ecosystem. With only 100 founding members, we offer unprecedented exclusivity, personalized attention, and a holistic approach that integrates fitness, nutrition, and recovery under one roof."
+    answer: "1% Circle is not just a fitness club—it's a comprehensive wellness ecosystem. With only 100 founding members, we offer unprecedented exclusivity, personalized attention, and a holistic approach that integrates fitness, nutrition, and recovery under one roof."
   },
   {
-    question: "Can I freeze my membership if I&apos;m traveling?",
+    question: "Can I freeze my membership if I'm traveling?",
     answer: "Yes, Founding Elite members can freeze their membership for up to 90 days per year at no additional cost. Founding Premier members can freeze for up to 60 days. We also offer reciprocal access arrangements with select partner clubs worldwide."
   },
   {
@@ -125,16 +125,8 @@ const faqs = [
     answer: "Members must be 21 years or older. We also offer family membership packages that include access for spouse and children above 16 years with parental supervision."
   },
   {
-    question: "What is the guest policy?",
-    answer: "Founding Elite members receive 12 complimentary guest passes per year, while Founding Premier members receive 6. Additional guest passes can be purchased. All guests must be registered 24 hours in advance."
-  },
-  {
     question: "Is there a dress code?",
     answer: "We maintain a smart-casual dress code in common areas and the cafe. Athletic wear is required in fitness areas. Spa areas have their own protocols that will be explained during your orientation."
-  },
-  {
-    question: "Can I cancel my membership?",
-    answer: "Founding memberships require a 12-month minimum commitment. After the initial period, memberships can be cancelled with 90 days written notice. The one-time initiation fee is non-refundable."
   }
 ]
 

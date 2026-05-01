@@ -184,7 +184,7 @@ export function Navbar() {
             {/* Right Section */}
             <div className="flex items-center gap-4">
               {/* Book a Call CTA */}
-              <Link href="/membership#form">
+              <Link href="/contact">
                 <Button
                   className="hidden sm:inline-flex bg-[#960808] hover:bg-[#7a0606] text-white font-medium px-6 shimmer"
                 >
@@ -301,7 +301,7 @@ export function Navbar() {
               {/* Footer CTA */}
               <div className="p-6 border-t border-border">
                 <Link
-                  href="/membership#form"
+                  href="/contact"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block"
                 >
