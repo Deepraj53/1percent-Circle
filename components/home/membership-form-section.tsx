@@ -92,7 +92,7 @@ export function MembershipFormSection() {
           <div className="absolute inset-0 flex items-center">
             <div className="px-8 md:px-12 lg:px-16 max-w-2xl">
               <p className="text-white text-lg md:text-xl lg:text-2xl font-serif leading-relaxed">
-                Join 200+ elite members who have elevated their wellness journey
+                Join elite members who have elevated their wellness journey
               </p>
               <p className="text-white/70 text-sm md:text-base mt-2">
                 Experience the transformation that awaits
