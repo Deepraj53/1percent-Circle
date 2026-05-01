@@ -75,7 +75,7 @@ The atmosphere itself is curated for healing. Soft lighting, therapeutic aromath
   },
   gallery: {
     video: {
-      src: '/videos/deep-breath.mp4',
+      src: '/videos/deep-breath-gallery.mp4',
       poster: '/images/deep-breath-gallery-poster.jpg',
       alt: 'Deep Breath spa experience',
       title: 'Wellness Journey',
@@ -83,8 +83,8 @@ The atmosphere itself is curated for healing. Soft lighting, therapeutic aromath
     images: [
       '/images/gallery/deep-breath-3.jpg',
       '/images/gallery/deep-breath-4.jpg',
-      '/images/gallery/deep-breath-5.jpg',
-      '/images/gallery/deep-breath-6.jpg',
+      '/images/gallery/deep-breath-gallery-a.jpg',
+      '/images/gallery/deep-breath-gallery-b.jpg',
     ],
   },
   crossLinks: [
