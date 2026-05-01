@@ -84,7 +84,7 @@ Whether you're training for peak performance or seeking a holistic approach to s
       title: 'Fitness Journey',
     },
     images: [
-      '/Gallery 3.png',
+      '/images/1percent-dumble.jpg',
       '/Gallery 4.png',
       '/Gallery 5.png',
       '/Gallery 6.png',

@@ -36,8 +36,8 @@ const galleryItems = [
   {
     id: 5,
     type: 'image',
-    src: '/images/gallery/step-inside-weights.jpg',
-    alt: 'ZIVA barbell rack in the premium weight training area',
+    src: '/images/1percent-training.jpg',
+    alt: 'Personal training session at 1% Circle gym',
   },
 ]
 
