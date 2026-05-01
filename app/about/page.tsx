@@ -150,7 +150,7 @@ export default function AboutPage() {
             className="relative"
           >
             {/* Main Image */}
-            <div className="relative aspect-16/10 md:aspect-[2/1] lg:aspect-[2.5/1] overflow-hidden rounded-xl lg:rounded-2xl">
+            <div className="relative aspect-16/10 md:aspect-2/1 lg:aspect-2.5/1 overflow-hidden rounded-xl lg:rounded-2xl">
               <Image
                 src="/images/interior-1percent.jpg"
                 alt="1% Circle Philosophy"
@@ -263,14 +263,14 @@ export default function AboutPage() {
                 variants={fadeInUp}
                 className="group"
               >
-                <div className="relative aspect-[3/4] rounded-xl overflow-hidden mb-6">
+                <div className="relative aspect-3/4 rounded-xl overflow-hidden mb-6">
                   <Image
                     src={leader.image}
                     alt={leader.name}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-background/80 via-transparent to-transparent" />
                 </div>
                 <h3 className="text-2xl font-serif text-foreground mb-1">{leader.name}</h3>
                 <p className="text-copper font-medium mb-3">{leader.role}</p>
